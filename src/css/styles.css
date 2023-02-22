@@ -44,3 +44,43 @@
   clip-path: inset(50%);
   margin: -1px;
 }
+
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    width: 280px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 704px;
+  }
+
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1248px
+  }
+}
