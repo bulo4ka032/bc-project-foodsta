@@ -1,0 +1,40 @@
+
+.favorites_title{ 
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+.favorites_sub_title{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 60px;
+}
+.favorites_list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.favorites_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 282px;
+    width: 280px;
+    background: #FEFEFE;
+    border: 11px solid #FFE550;
+    border-radius: 50%;
+}
+.features_img{
+    max-width: 224px;
+    border-radius: 50%;
+    max-height: 224px;
+}
+.favorites_hidden{
+    display: none;
+}
