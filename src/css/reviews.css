@@ -1,0 +1,21 @@
+
+.review{
+
+}
+
+.review-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    color:var(--text-color);
+    
+}
+
+.review-icon{
+    fill: var(--main-color);
+}
+
+
+
