@@ -28,6 +28,12 @@
     background: #FEFEFE;
     border: 11px solid #FFE550;
     border-radius: 50%;
+    transition: border-color var(--transition-duration-and-fun);
+}
+.favorites_item:hover,
+.favorites_item:focus{
+    border-color: #BBF330;
+    cursor: pointer;
 }
 .features_img{
     max-width: 224px;
