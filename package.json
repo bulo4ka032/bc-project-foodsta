@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/goit-bc50-html-css-project/",
     "preview": "vite preview"
   },
   "devDependencies": {
