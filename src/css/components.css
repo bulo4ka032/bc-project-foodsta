@@ -1,0 +1,24 @@
+button {
+     font-weight: 500;
+        font-size: 13px;
+        line-height: 1.5;
+        color: var(--text-color);
+    border-radius: 30px;
+}
+
+.dark-btn {
+    background-color: var(--button-color);
+}
+
+.light-btn {
+    background-color: white;
+    border: 0.854167px solid var(--dark-color);
+}
+
+.main-btn {
+       padding: 6px 18px;
+}
+
+.secondary-btn {
+    padding: 10px 22px;
+}
