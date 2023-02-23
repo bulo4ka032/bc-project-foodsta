@@ -60,6 +60,7 @@
 }
 .mobile-menu {
   position: absolute;
+  z-index: 100;
   right: 20px;
   top: 50px;
   background-color: white;
