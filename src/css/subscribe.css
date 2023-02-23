@@ -106,6 +106,10 @@
   transition: background-color var(--transition-duration-and-fun);
 }
 
+.subscribe-input:invalid:not(:placeholder-shown) + .subscribe-button {
+  cursor: not-allowed;
+}
+
 .subscribe-button:hover,
 .subscribe-button:focus {
   background-color: var(--main-color);
@@ -121,6 +125,9 @@
 }
 
 @media screen and (min-width: 480px) {
+  .subscribe-box {
+    width: 280px;
+  }
 }
 
 @media screen and (min-width: 768px) {
