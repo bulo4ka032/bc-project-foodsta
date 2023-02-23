@@ -1,9 +1,9 @@
 .footer {
   margin-left: auto;
   margin-right: auto;
-  background-image: url(./img/foto_footer/footer-mobile-1.png),
-    url(./img/foto_footer/footer-mobile-orang.png),
-    url(./img/foto_footer/footer-mobile-apple.png);
+  background-image: url(../img/foto_footer/footer-mobile-1.png),
+    url(../img/foto_footer/footer-mobile-orang.png),
+    url(../img/foto_footer/footer-mobile-apple.png);
   background-position: 50% 100%, 100% 10%, 0% 30%;
   background-size: 100%, 30%, 35%;
   background-repeat: no-repeat;
@@ -12,9 +12,9 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .footer {
-    background-image: url(./img/foto_footer/footer-mobile-1@2x.png),
-      url(./img/foto_footer/footer-mobile-orang@2x.png),
-      url(./img/foto_footer/footer-mobile-apple@2x.png);
+    background-image: url(../img/foto_footer/footer-mobile-1@2x.png),
+      url(../img/foto_footer/footer-mobile-orang@2x.png),
+      url(../img/foto_footer/footer-mobile-apple@2x.png);
   }
 }
 /* =======Logo and menu======= */
@@ -106,7 +106,7 @@
 
 .footer-subscribe-error::before {
   content: '';
-  background-image: url(./img/subscribe/warning.svg);
+  background-image: url(../img/subscribe/warning.svg);
   margin-right: 4px;
   width: 12px;
   height: 12px;
