@@ -1,6 +1,6 @@
 
 .review{
-
+    background-color: var(--main-color);
 }
 
 .review-title{
@@ -10,12 +10,107 @@
     font-size: 28px;
     line-height: 1.18;
     color:var(--text-color);
-    
+    margin-bottom: 20px;
 }
 
 .review-icon{
     fill: var(--main-color);
 }
 
+.review-description{
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--text-color);
+    margin-bottom: 32px;
+}
 
+.review-card{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 247px;
+    background-color: var(--background-color);
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+   }
+
+.review-rate{
+    display: flex;
+    margin-left: 8px;
+    margin-top: 8px;
+
+}
+
+.review-text{
+    display: flex;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--text-color);
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 28px;
+
+}
+
+.review-photo{
+    margin-left: 8px;
+    margin-right: 24px;
+}
+
+.review-footer{
+    display: flex;
+    margin-left: 8px;
+    margin-right: 16px;
+   }
+
+.review-name{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--text-color);
+    margin-bottom: 2px;
+}
+
+/* .review-name::after{
+    display: block;
+    content: '';
+    width: 1px;
+    height: 52px;
+    background-color: var(--dark-color);
+} */
+
+.review-position{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+.review-card-description{
+    position: relative;
+       /* width: 93px;
+    height: 52px;
+    border-right: 0.85px solid #7EB101; */
+}
+
+.review-card-description::after{
+    position: absolute;
+    top: 0;
+    right: -15px;
+    display: block;
+    border-radius: 0.425px;
+    content: '';
+    width: 0.85px;
+    height: 52px;
+    background-color: var(--dark-color);
+    /* width: 93px;
+    height: 52px;
+    border-right: 0.85px solid #7EB101; */
+
+}
 
