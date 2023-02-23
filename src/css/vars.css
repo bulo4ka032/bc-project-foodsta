@@ -1,10 +1,14 @@
 :root {
-    --text-color: #2C2C2C;
-    --main-color: #FFE550;
-    --button-color: #BBF330;
-    --dark-color: #7EB101;
-    --background-color: #FEFEFE;
-    --modal-color: #C4C4C4;
-    --fruit-shadow: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
-    --transition-duration-and-fun: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --text-color: #2c2c2c;
+  --main-color: #ffe550;
+  --button-color: #bbf330;
+  --dark-color: #7eb101;
+  --background-color: #fefefe;
+  --modal-color: #c4c4c4;
+  --fruit-shadow: radial-gradient(
+    50% 50% at 50% 50%,
+    #2f583f 0%,
+    rgba(105, 105, 105, 0) 100%
+  );
+  --transition-duration-and-fun: 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
