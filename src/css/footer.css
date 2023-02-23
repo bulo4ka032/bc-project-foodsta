@@ -1,5 +1,4 @@
 .footer {
-  padding: 60px 20px;
   margin-left: auto;
   margin-right: auto;
   background-image: url(../img/foto_footer/footer-mobile-1.png),
@@ -22,72 +21,91 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: #000000;
+  color: var(--text-color);
 }
-.subscribe {
+.footer-nav-menu-item {
+  margin-bottom: 20px;
+}
+.footer-wraper {
+  display: flex;
+}
+.footer-subscribe-text {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
-  color: #2c2c2c;
+  color: var(--text-color);
 }
 .footer-input {
   justify-content: center;
   width: 279px;
   height: 42px;
   color: #757575;
-  border: 0.85px solid #ffe550;
+  border: 0.85px solid var(--main-color);
   border-radius: 30px;
   background-color: #fefefe;
 }
 .footer-input:hover,
 .footer-input:focus {
-  border-color: rgba(126, 177, 1, 1);
+  border-color: var(--dark-color);
 }
 .footer-input::placeholder {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
-  color: #2c2c2c;
+  color: var(--text-color);
 }
 .footer-submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 11px 22px;
   font-weight: 500;
   font-size: 13px;
   line-height: 1.5;
-  color: rgba(44, 44, 44, 1);
+  color: var(--text-color);
   background-color: rgba(255, 255, 255, 1);
-  border: 0.85px solid #7eb101;
+  border: 0.85px solid var(--dark-color);
   border-radius: 30px;
+  margin-top: 20px;
 }
 .footer-subscribe-text {
   font-weight: 400;
   font-size: 10px;
   line-height: 1.2;
-  color: #2c2c2c;
-}
-.footer-subscribe-link {
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 1.2;
-  text-decoration-line: underline;
-  color: #7eb101;
+  color: var(--text-color);
 }
 
+.footer-polici {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.5;
+  color: var(--text-color);
+  margin-top: 20px;
+}
+.footer-polici-link {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  text-decoration-line: underline;
+  color: var(--dark-color);
+}
 .footer-list {
   font-weight: 400;
   font-size: 10px;
   line-height: 1.2;
   text-decoration-line: underline;
-  color: #7eb101;
+  color: var(--dark-color);
+  margin-bottom: 40px;
+  margin-top: 60px;
 }
-.footer-list-block {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.footer-list > .footer-list-item {
+  display: inline-block;
+  margin-right: 20px;
 }
 .footer-text {
+  text-align: center;
   font-weight: 400;
   font-size: 10px;
   line-height: 1.2;
-  color: #2c2c2c;
+  color: var(--text-color);
 }
