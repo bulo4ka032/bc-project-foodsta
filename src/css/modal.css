@@ -5,6 +5,7 @@
   left: 0px;
   top: 0px;
   background: rgba(94, 99, 99, 0.7);
+  transition: var(--transition-duration-and-fun);
 }
 .modal {
   position: relative;
@@ -74,7 +75,15 @@
   background: var(--background-color);
   border: 2px solid var(--dark-color);
   border-radius: 30px;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
 }
+.submit-button:hover {
+  background-color: var(--button-color);
+}
+
 .modal-input::placeholder {
   font-weight: 400;
   font-size: 16px;
