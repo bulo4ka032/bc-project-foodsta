@@ -1,3 +1,30 @@
+.upward{
+    position: fixed;
+    bottom: 1340px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    background: url(../img/arrow_scroll.png);
+    background-size: cover;
+    background-color: transparent;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+   
+    transform: translateY(-1500);
+    transition: transform 0.5s;
+    scale: 1;
+    
+}
+.upward:hover{
+    scale: 1.1;
+}
+.upward.active{
+    bottom: 40px;
+    visibility: visible;
+    opacity: 1;
+}
+
 .favorites_title{ 
     width: 280px;
     font-weight: 700;
@@ -69,6 +96,11 @@
 }
 .favorites_hidden{
     display: none;
+}
+.scrollup_link{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
 }
 @media screen and (min-width: 768px) {
     .favorites_list{
