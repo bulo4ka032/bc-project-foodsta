@@ -8,6 +8,9 @@
 }
 .modal {
   position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   padding: 32px;
   width: 458px;
@@ -40,7 +43,11 @@
   text-align: center;
 }
 .form-label {
+  margin-left: 14px;
   margin-bottom: 2px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
 }
 .modal-input {
   width: 394px;
