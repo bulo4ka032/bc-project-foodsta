@@ -4,6 +4,7 @@
   | default @import url()
   |============================
 */
+@import url('./components.css');
 @import url('./reset.css');
 @import url('./vite-promo.css');
 @import url('./vars.css');
@@ -17,73 +18,20 @@
 @import url('./modal.css');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  color: var(--text-color);
+  background-color: var(--background-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-}
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-
-  margin: 0 auto;
-}
-
-
-
-.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-@media screen and (min-width: 320px) and (max-width: 479px) {
-  .container {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .container {
-    width: 320px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-
-  .section {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .container {
-    width: 1280px;
-  }
+  --btn-green: #bbf330;
+  --text-color-main: #2c2c2c;
+  --yellow-main: #ffe550;
 }

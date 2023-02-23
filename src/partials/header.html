@@ -1,20 +1,55 @@
 <!-- HEADER -->
 <header class="header-section">
-  <a href="#" class="header-logo">
+  <a href="#" class="header-logo-link">
     <svg width="66" height="52">
-      <use href="../img/icons.svg#icon-logo"></use>
+      <use href="./img/icons.svg#icon-logo"></use>
     </svg>
   </a>
   <div class="header-wrap">
     <nav class="header-nav">
       <ul class="header-menu">
-        <li class="header-menu-item"><a href="#home">Home</a></li>
-        <li class="header-menu-item"><a href="#about">About</a></li>
-        <li class="header-menu-item"><a href="#service">Service</a></li>
-        <li class="header-menu-item"><a href="#menu">Menu</a></li>
-        <li class="header-menu-item"><a href="#contact">Contact</a></li>
+        <li><a href="#home" class="header-menu-item">Home</a></li>
+        <li><a href="#about" class="header-menu-item">About</a></li>
+        <li><a href="#service" class="header-menu-item">Service</a></li>
+        <li><a href="#menu" class="header-menu-item">Menu</a></li>
+        <li><a href="#contact" class="header-menu-item">Contact</a></li>
       </ul>
+      <button href="" class="mobile-menu-open js-open-menu">
+        <svg class="burger-icon" width="28" height="28">
+          <use href="./img/icons.svg#icon-burger" class="burger-svg"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu js-menu-container">
+        <button class="mobile-menu-close">
+          <svg
+            width="24"
+            height="24"
+            class="mobile-menu-close-icon js-close-menu"
+          >
+            <use href="./img/icons.svg#mobile-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu-list">
+          <li class="mobile-menu-item">
+            <a href="#home" class="mobile-menu-link home-link">Home</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="#about" class="mobile-menu-link">About</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="#service" class="mobile-menu-link">Service</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="#menu" class="mobile-menu-link">Menu</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="#contact" class="mobile-menu-link contact-link">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <button type="button">Order Now</button>
+    <button type="button" class="dark-btn main-btn header-btn" data-modal-open>
+      Order Now
+    </button>
   </div>
 </header>
