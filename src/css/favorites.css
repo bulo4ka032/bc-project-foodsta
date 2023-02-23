@@ -38,14 +38,11 @@
     border: 11px solid var(--main-color);
     border-radius: 50%;
     transition: border-color var(--transition-duration-and-fun);
-    /* scale: 1.0; */
 }
 .favorites_links:hover,
 .favorites_links:focus{
     border-color: var(--button-color);
     cursor: pointer;
-    /* scale: 1.1; */
-    /* transition: scale var(--transition-duration-and-fun); */
 }
 .zoom_img{
     scale:1.0;
