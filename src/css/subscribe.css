@@ -1,30 +1,47 @@
 .subscribe {
+  width: 100%;
   padding-top: 52px;
   padding-bottom: 60px;
 }
 
 /* .container {} */
 
+.subscribe-wrap {
+  position: relative;
+}
+
 .subscribe-title {
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.2;
-  color: #2c2c2c;
+  color: var(--text-color);
 }
 
 .subscribe-text {
+  margin-bottom: 40px;
   font-size: 14px;
   line-height: calc(16 / 14);
-  color: #2c2c2c;
+  color: var(--text-color);
 }
 
-.cubscribe-form {
+/* .cubscribe-form {} */
+.subscribe-label {
+  position: relative;
 }
-/* .subscribe-label {} */
 
 .subscribe-input {
-  border: none;
-  border-color: #ffe550;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px 11px;
+  outline: transparent;
+  text-transform: capitalize;
+  border: 0.854167px solid var(--main-color);
+  border-radius: 30px;
+  color: var(--text-color);
 }
 
 .subscribe-input::placeholder {
@@ -33,15 +50,76 @@
   color: #505050;
 }
 
+.subscribe-input:valid {
+  border: 0.854167px solid var(--dark-color);
+}
+
+.subscribe-input:invalid:not(:placeholder-shown) {
+  border: 0.854167px solid #ff705d;
+}
+
+.subscribe-error {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 34px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 10px;
+  line-height: 1.5;
+  color: #ff705d;
+}
+
+.subscribe-error::before {
+  content: '';
+  background-image: url(/src/img/subscribe/warning.svg);
+  margin-right: 4px;
+  width: 12px;
+  height: 12px;
+}
+
+.subscribe-input:invalid:not(:placeholder-shown) + .subscribe-error {
+  opacity: 1;
+}
+
 .subscribe-button {
+  display: block;
+  margin-left: auto;
   padding: 11px 22px;
   font-weight: 500;
   font-size: 13px;
   line-height: 1.5;
-  color: #2c2c2c;
-  background-color: #bbf330;
+  color: var(--text-color);
+  background-color: var(--button-color);
+  border-radius: 30px;
+  border: none;
 }
+
+.subscribe-button:is:(:hover, :focus) {
+  background-color: var(--main-color);
+}
+
 .subscribe-img {
-  width: 280px;
-  height: 78px;
+  display: flex;
+  position: absolute;
+  transform: translateY(-100%);
+  top: -17px;
+  justify-content: center;
+  max-width: 163px;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .subscribe-img {
+    max-width: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-img {
+    justify-content: end;
+  }
+}
+
+@media screen and (min-width: 1280px) {
 }
