@@ -1,6 +1,6 @@
 
 .review{
-    background-image: url(./img/bg-review-mob-320.jpg);
+    background-image: url(../img/bg-review-mob-320.jpg);
 }
 
 .review-title{
@@ -116,7 +116,7 @@
 
  @media screen and (min-width: 768px) {
     .review{
-        background-image: url(./img/bg-review-tab.jpg);
+        background-image: url(../img/bg-review-tab.jpg);
     }
     
     .review-title{
@@ -179,7 +179,7 @@
 
  @media screen and (min-width: 1280px) {
     .review{
-        background-image: url(./img/bg-review-desk.jpg);
+        background-image: url(../img/bg-review-desk.jpg);
     }
 
     .section{
