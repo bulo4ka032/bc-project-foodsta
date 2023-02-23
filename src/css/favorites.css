@@ -2,17 +2,17 @@
     position: fixed;
     bottom: 1340px;
     right: 40px;
-    width: 65px;
-    height: 65px;
-    background: url(../img/scroll.png);
+    width: 50px;
+    height: 50px;
+    background: url(../img/arrow_scroll.png);
     background-size: cover;
     background-color: transparent;
     cursor: pointer;
     visibility: hidden;
     opacity: 0;
-    transition: 0.5s;
-    border: 4px solid #7EB101;
-    border-radius: 50%;
+   
+    transform: translateY(-1500);
+    transition: transform 0.5s;
     scale: 1;
     
 }
