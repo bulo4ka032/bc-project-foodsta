@@ -147,9 +147,9 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .header-menu-item:hover,
-  .header-menu-item:focus {
-    font-weight: 700;
-  }
+@media screen and (min-width: 1280px) {
+    .header-menu-item:hover,
+    .header-menu-item:focus {
+        font-weight: 700;
+    }
 }

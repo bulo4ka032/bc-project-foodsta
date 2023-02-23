@@ -31,5 +31,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --btn-green: #bbf330;
+  --text-color-main: #2c2c2c;
+  --yellow-main: #ffe550;
 }
 
