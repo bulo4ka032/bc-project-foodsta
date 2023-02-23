@@ -1,0 +1,107 @@
+.special-section {
+    background-image: url(./img/services-images/mobile-rectangle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 41px;
+    padding-bottom: 72px;
+}
+
+.special-image {
+    margin-bottom: 8px;
+}
+
+.special-title {
+    max-width: 280px;
+    margin-bottom: 28px;
+    font-weight: 700;
+    line-height: 1.17;
+    color: var(--text-color);
+}
+
+.special-general-text {
+    max-width: 280px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--text-color);
+}
+
+.special-list {
+    margin-bottom: 28px;
+}
+
+.special-item::before {
+    content: '';
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    background-image: url(./img/services-images/rocket-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.special-item:nth-child(2n)::before {
+    background-image: url(./img/services-images/order-icon.svg);
+}
+
+.special-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+
+.special-item-title {
+    max-width: 280px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    line-height: 1.16;
+    color: var(--text-color);
+}
+
+.special-item-text {
+    max-width: 280px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--text-color);
+}
+
+.special-button {
+    width: 106px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 2px solid var(--dark-color);
+    border-radius: 30px;
+    font-style: inherit;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--text-color);
+    outline: none;
+    transition: background-color var(--transition-duration-and-fun), border var(--transition-duration-and-fun);
+}
+
+.special-button:hover,
+.special-button:focus {
+    background-color: var(--button-color);
+    border: transparent;
+}
+
+.read-more-text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #000000;
+}
+
+.special-bottom-wrap {
+    display: flex;
+    column-gap: 24px;
+    align-items: center;
+}
+
+.text-wrap {
+    display: flex;
+}
