@@ -105,3 +105,42 @@
 .text-wrap {
     display: flex;
 }
+
+@media screen and (min-width: 480px) and (max-width: 767px) {    
+    .special-section {
+        background-image: url(../img/services-images/mobile-second-rectangle.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .container {
+        width: 734px;
+        height: auto;
+    }
+    .special-section {
+        background-image: url(../img/services-images/tablet-services-bg.jpg);
+        padding-top: 150px;
+        padding-bottom: 88px;
+    }
+    .special-title {
+        font-size: 42px;
+        line-height: 1.16;
+        max-width: 526px;
+    }
+    
+    .special-general-text {
+        font-size: 16px;
+        line-height: 1.5;
+        max-width: 500px;
+    }
+
+    .special-list {
+        display: flex;
+        column-gap: 80px;
+    }
+
+    .special-item:last-child {
+        max-width: 252px;
+    }
+
+}
