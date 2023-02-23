@@ -1,10 +1,10 @@
 .footer {
-  margin-left: auto;
-  margin-right: auto;
+  height: 560px;
+  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
   background-image: url(../img/foto_footer/footer-mobile-1.png),
     url(../img/foto_footer/footer-mobile-orang.png),
     url(../img/foto_footer/footer-mobile-apple.png);
-  background-position: 50% 100%, 100% 10%, 0% 30%;
+  background-position: 50% 103%, 100% -10%, 0% 17%;
   background-size: 100%, 30%, 35%;
   background-repeat: no-repeat;
 }
@@ -20,25 +20,30 @@
 /* =======Logo and menu======= */
 .footer-wraper {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
-.footer-nav-menu {
-  display: inline-block;
-  justify-content: space-between;
+.footer-nav {
+  margin-right: 101px;
 }
-
 .footer-nav-menu {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
   color: var(--text-color);
 }
+
 .footer-nav-menu-item {
   margin-bottom: 20px;
 }
 /* ======Subscribe====== */
+.footer-subscribe {
+  margin-top: 40x;
+}
 .subscribe-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--text-color);
   margin-bottom: 12px;
 }
 .footer-subscribe-text {
@@ -46,6 +51,13 @@
   font-size: 14px;
   line-height: 1.5;
   color: var(--text-color);
+}
+.footer-subscribe-link {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  text-decoration-line: underline;
+  color: var(--dark-color);
 }
 .footer-subscribe-label {
   position: relative;
@@ -160,14 +172,6 @@
   color: var(--dark-color);
 }
 /* ======second block========= */
-.footer-block-second {
-  margin-top: 60px;
-}
-.footer-list-wraper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 
 .footer-list {
   margin: auto;
@@ -178,6 +182,8 @@
   color: var(--dark-color);
   margin-bottom: 40px;
   margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-text {
