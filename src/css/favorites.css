@@ -66,9 +66,9 @@
     transition: scale var(--transition-duration-and-fun)
 }
 .favorites_img{
-    width: 315px;
+    width: 224px;
     border-radius: 50%;
-    height: 315px;
+    height: 224px;
 }
 .favorites_hidden{
     display: none;
