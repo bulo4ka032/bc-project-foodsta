@@ -37,6 +37,12 @@ button {
     margin: -1px;
 }
 
+.is-hidden {
+    opacity: 0;
+    visibility: none;
+    pointer-events: none;
+}
+
 .container {
     padding-right: 15px;
     padding-left: 15px;
