@@ -7,7 +7,13 @@
 /* .container {} */
 
 .subscribe-wrap {
+  display: flex;
+  justify-content: center;
   position: relative;
+}
+
+.subscribe-box {
+  width: 100%;
 }
 
 .subscribe-title {
@@ -42,6 +48,7 @@
   border: 0.854167px solid var(--main-color);
   border-radius: 30px;
   color: var(--text-color);
+  transition: color var(--transition-duration-and-fun);
 }
 
 .subscribe-input::placeholder {
@@ -62,7 +69,7 @@
   opacity: 0;
   position: absolute;
   left: 0;
-  top: 34px;
+  top: 40px;
   display: inline-flex;
   align-items: center;
   font-size: 10px;
@@ -93,33 +100,63 @@
   background-color: var(--button-color);
   border-radius: 30px;
   border: none;
+  transition: background-color var(--transition-duration-and-fun);
 }
 
-.subscribe-button:is:(:hover, :focus) {
+.subscribe-button:hover,
+.subscribe-button:focus {
   background-color: var(--main-color);
 }
 
 .subscribe-img {
-  display: flex;
   position: absolute;
   transform: translateY(-100%);
   top: -17px;
   justify-content: center;
-  max-width: 163px;
-  width: 100%;
+  width: 163px;
+  height: 78px;
 }
 
 @media screen and (min-width: 480px) {
-  .subscribe-img {
-    max-width: none;
-  }
 }
 
 @media screen and (min-width: 768px) {
   .subscribe-img {
     justify-content: end;
+    width: 281px;
+    height: 136px;
+  }
+
+  .subscribe-wrap {
+    justify-content: flex-end;
   }
 }
 
 @media screen and (min-width: 1280px) {
+  .subscribe-img {
+    position: relative;
+    width: 547px;
+    height: 267px;
+    /* top: 0; */
+    transform: none;
+  }
+  .subscribe-box {
+    width: 656px;
+  }
+
+  .subscribe-label {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 38px;
+  }
+
+  .subscribe-button {
+    margin-right: 127px;
+  }
+
+  .subscribe-input {
+    width: 395px;
+  }
 }
