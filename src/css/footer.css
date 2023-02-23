@@ -1,0 +1,93 @@
+.footer {
+  padding: 60px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/foto_footer/footer-mobile-1.png),
+    url(../img/foto_footer/footer-mobile-orang.png),
+    url(../img/foto_footer/footer-mobile-apple.png);
+  background-position: 50% 100%, 100% 3%, 0% 20%;
+  background-size: 100%, 40%, 35%;
+  background-repeat: no-repeat;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .footer {
+    background-image: url(../img/foto_footer/footer-mobile-1@2x.png),
+      url(../img/foto_footer/footer-mobile-orang@2x.png),
+      url(../img/foto_footer/footer-mobile-apple@2x.png);
+  }
+}
+.footer-nav-menu {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000000;
+}
+.subscribe {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #2c2c2c;
+}
+.footer-input {
+  justify-content: center;
+  width: 279px;
+  height: 42px;
+  color: #757575;
+  border: 0.85px solid #ffe550;
+  border-radius: 30px;
+  background-color: #fefefe;
+}
+.footer-input:hover,
+.footer-input:focus {
+  border-color: rgba(126, 177, 1, 1);
+}
+.footer-input::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #2c2c2c;
+}
+.footer-submit-button {
+  padding: 11px 22px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(44, 44, 44, 1);
+  background-color: rgba(255, 255, 255, 1);
+  border: 0.85px solid #7eb101;
+  border-radius: 30px;
+}
+.footer-subscribe-text {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #2c2c2c;
+}
+.footer-subscribe-link {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  text-decoration-line: underline;
+  color: #7eb101;
+}
+
+.footer-list {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  text-decoration-line: underline;
+  color: #7eb101;
+}
+.footer-list-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer-text {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #2c2c2c;
+}
