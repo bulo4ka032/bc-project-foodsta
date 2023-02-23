@@ -1,24 +1,35 @@
 .footer {
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/foto_footer/footer-mobile-1.png),
-    url(../img/foto_footer/footer-mobile-orang.png),
-    url(../img/foto_footer/footer-mobile-apple.png);
-  background-position: 50% 100%, 100% 3%, 0% 20%;
-  background-size: 100%, 40%, 35%;
+  background-image: url(./img/foto_footer/footer-mobile-1.png),
+    url(./img/foto_footer/footer-mobile-orang.png),
+    url(./img/foto_footer/footer-mobile-apple.png);
+  background-position: 50% 100%, 100% 10%, 0% 30%;
+  background-size: 100%, 30%, 35%;
   background-repeat: no-repeat;
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .footer {
-    background-image: url(../img/foto_footer/footer-mobile-1@2x.png),
-      url(../img/foto_footer/footer-mobile-orang@2x.png),
-      url(../img/foto_footer/footer-mobile-apple@2x.png);
+    background-image: url(./img/foto_footer/footer-mobile-1@2x.png),
+      url(./img/foto_footer/footer-mobile-orang@2x.png),
+      url(./img/foto_footer/footer-mobile-apple@2x.png);
   }
 }
+/* =======Logo and menu======= */
+.footer-wraper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .footer-nav-menu {
-  font-weight: 400;
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.footer-nav-menu {
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
   color: var(--text-color);
@@ -26,14 +37,18 @@
 .footer-nav-menu-item {
   margin-bottom: 20px;
 }
-.footer-wraper {
-  display: flex;
+/* ======Subscribe====== */
+.subscribe-text {
+  margin-bottom: 12px;
 }
 .footer-subscribe-text {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
   color: var(--text-color);
+}
+.footer-subscribe-label {
+  position: relative;
 }
 .footer-input {
   justify-content: center;
@@ -48,27 +63,82 @@
 .footer-input:focus {
   border-color: var(--dark-color);
 }
-.footer-input::placeholder {
+
+.footer-subscribe-input {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 12px;
+  line-height: 1.2;
   color: var(--text-color);
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px 11px;
+  outline: transparent;
+  text-transform: capitalize;
+  border: 0.85px solid var(--main-color);
+  border-radius: 30px;
 }
+
+.footer-input::placeholder {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #505050;
+}
+
+.footer-input:valid {
+  border: 0.85px solid var(--dark-color);
+}
+
+.footer-input:invalid:not(:placeholder-shown) {
+  border: 0.85px solid #ff705d;
+}
+
+.footer-subscribe-error {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 34px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 10px;
+  line-height: 1.5;
+  color: #ff705d;
+}
+
+.footer-subscribe-error::before {
+  content: '';
+  background-image: url(./img/subscribe/warning.svg);
+  margin-right: 4px;
+  width: 12px;
+  height: 12px;
+}
+
+.footer-input:invalid:not(:placeholder-shown) + .footer-subscribe-error {
+  opacity: 1;
+}
+
 .footer-submit-button {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 11px 22px;
+
   font-weight: 500;
   font-size: 13px;
   line-height: 1.5;
   color: var(--text-color);
   background-color: rgba(255, 255, 255, 1);
+
+  border-radius: 30px;
   border: 0.85px solid var(--dark-color);
   border-radius: 30px;
-  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  padding: 11px 22px;
 }
+
 .footer-subscribe-text {
+  margin-right: 0;
+  margin-top: 20px;
   font-weight: 400;
   font-size: 10px;
   line-height: 1.2;
@@ -89,7 +159,18 @@
   text-decoration-line: underline;
   color: var(--dark-color);
 }
+/* ======second block========= */
+.footer-block-second {
+  margin-top: 60px;
+}
+.footer-list-wraper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .footer-list {
+  margin: auto;
   font-weight: 400;
   font-size: 10px;
   line-height: 1.2;
@@ -98,10 +179,7 @@
   margin-bottom: 40px;
   margin-top: 60px;
 }
-.footer-list > .footer-list-item {
-  display: inline-block;
-  margin-right: 20px;
-}
+
 .footer-text {
   text-align: center;
   font-weight: 400;

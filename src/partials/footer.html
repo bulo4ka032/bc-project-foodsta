@@ -4,7 +4,7 @@
       <div>
         <a class="footer-logo" href="#">
           <svg>
-            <use href="../img/icons.svg#icon-logo" width="66" height="52"></use>
+            <use href="./img/icons.svg#icon-logo" width="66" height="52"></use>
           </svg>
         </a>
       </div>
@@ -31,38 +31,49 @@
       </div>
     </div>
     <div class="footer-subscribe">
-      <p class="footer-subscribe-text">Subscribe</p>
+      <p class="subscribe-text">Subscribe</p>
       <form class="footer-form">
-        <input
-          type="text"
-          name="email"
-          placeholder="Enter your email"
-          class="footer-input"
-          required
-        />
-        <button type="submit" class="footer-submit-button">Subscribe</button>
-        <p class="footer-polici">
-          By subscribing you agree to with our &nbsp;<a
-            class="footer-polici-link"
-            href=""
-            >Privacy Policy</a
-          >
-        </p>
+        <label class="footer-subscribe-label">
+          <input
+            class="footer-subscribe-input"
+            name="subscribe"
+            type="email"
+            title="Not a valid email address (example@email.com)"
+            minlength="6"
+            maxlength="25"
+            placeholder="Enter your email"
+            required
+          />
+          <span class="footer-subscribe-error">
+            Not a valid email address (example@email.com)
+          </span>
+          <button class="footer-submit-button" type="submit">Subscribe</button>
+        </label>
       </form>
+
+      <p class="footer-subscribe-text">
+        By subscribing you agree to with our &nbsp;<a
+          class="footer-subscribe-link"
+          href=""
+          >Privacy Policy</a
+        >
+      </p>
     </div>
   </div>
   <div class="footer-block-second">
-    <ul class="footer-list">
-      <li class="footer-list-item">
-        <a class="footer-list-link">Privacy Policy</a>
-      </li>
-      <li class="footer-list-item">
-        <a class="footer-list-link">Terms of Service</a>
-      </li>
-      <li class="footer-list-item">
-        <a class="footer-list-link">Cookies Settings</a>
-      </li>
-    </ul>
+    <div class="footer-list-wraper">
+      <ul class="footer-list">
+        <li class="footer-list-item">
+          <a class="footer-list-link">Privacy Policy</a>
+        </li>
+        <li class="footer-list-item">
+          <a class="footer-list-link">Terms of Service</a>
+        </li>
+        <li class="footer-list-item">
+          <a class="footer-list-link">Cookies Settings</a>
+        </li>
+      </ul>
+    </div>
     <p class="footer-text">&copy;2022 FoodSta. All right reserved.</p>
   </div>
 </footer>
