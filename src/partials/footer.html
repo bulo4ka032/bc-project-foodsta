@@ -1,62 +1,79 @@
-<footer class="container">
+<footer class="container footer">
   <div class="footer-block-first">
-    <nav class="footer-nav-menu">
-      <a class="footer-logo" href="#">
-        <svg>
-          <use href="../img/icons.svg#icon-logo" width="66" height="52"></use>
-        </svg>
-      </a>
-      <ul class="footer-nav-menu">
-        <li class="footer-nav-menu-item">
-          <a class="footer-nav-menu-link" href="#home">Home</a>
-        </li>
-        <li class="footer-nav-menu-item">
-          <a class="footer-nav-menu-link" href="#about">About</a>
-        </li>
-        <li class="footer-nav-menu-item">
-          <a class="footer-nav-menu-link" href="#service">Service</a>
-        </li>
-        <li class="footer-nav-menu-item">
-          <a class="footer-nav-menu-link" href="#menu">Menu</a>
-        </li>
-        <li class="footer-nav-menu-item">
-          <a class="footer-nav-menu-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="footer-wraper">
+      <div>
+        <a class="footer-logo" href="#">
+          <svg>
+            <use href="./img/icons.svg#icon-logo" width="66" height="52"></use>
+          </svg>
+        </a>
+      </div>
+      <div>
+        <nav class="footer-nav-menu">
+          <ul class="footer-nav-menu">
+            <li class="footer-nav-menu-item">
+              <a class="footer-nav-menu-link" href="#home">Home</a>
+            </li>
+            <li class="footer-nav-menu-item">
+              <a class="footer-nav-menu-link" href="#about">About</a>
+            </li>
+            <li class="footer-nav-menu-item">
+              <a class="footer-nav-menu-link" href="#service">Service</a>
+            </li>
+            <li class="footer-nav-menu-item">
+              <a class="footer-nav-menu-link" href="#menu">Menu</a>
+            </li>
+            <li class="footer-nav-menu-item">
+              <a class="footer-nav-menu-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
     <div class="footer-subscribe">
-      <p class="subscribe">Subscribe</p>
+      <p class="subscribe-text">Subscribe</p>
       <form class="footer-form">
-        <input
-          type="text"
-          name="email"
-          placeholder="Enter your email"
-          class="footer-input"
-          required
-        />
-        <button type="submit" class="footer-submit-button">Subscribe</button>
-        <p>
-          By subscribing you agree to with our &nbsp;<a
-            class="footer-subscribe-link"
-            href=""
-            >Privacy Policy</a
-          >
-        </p>
+        <label class="footer-subscribe-label">
+          <input
+            class="footer-subscribe-input"
+            name="subscribe"
+            type="email"
+            title="Not a valid email address (example@email.com)"
+            minlength="6"
+            maxlength="25"
+            placeholder="Enter your email"
+            required
+          />
+          <span class="footer-subscribe-error">
+            Not a valid email address (example@email.com)
+          </span>
+          <button class="footer-submit-button" type="submit">Subscribe</button>
+        </label>
       </form>
+
+      <p class="footer-subscribe-text">
+        By subscribing you agree to with our &nbsp;<a
+          class="footer-subscribe-link"
+          href=""
+          >Privacy Policy</a
+        >
+      </p>
     </div>
   </div>
   <div class="footer-block-second">
-    <ul class="footer-list">
-      <li class="footer-list-item">
-        <a class="footer-list-link">Privacy Policy</a>
-      </li>
-      <li class="footer-list-item">
-        <a class="footer-list-link">Terms of Service</a>
-      </li>
-      <li class="footer-list-item">
-        <a class="footer-list-link">Cookies Settings</a>
-      </li>
-    </ul>
+    <div class="footer-list-wraper">
+      <ul class="footer-list">
+        <li class="footer-list-item">
+          <a class="footer-list-link">Privacy Policy</a>
+        </li>
+        <li class="footer-list-item">
+          <a class="footer-list-link">Terms of Service</a>
+        </li>
+        <li class="footer-list-item">
+          <a class="footer-list-link">Cookies Settings</a>
+        </li>
+      </ul>
+    </div>
     <p class="footer-text">&copy;2022 FoodSta. All right reserved.</p>
   </div>
 </footer>
