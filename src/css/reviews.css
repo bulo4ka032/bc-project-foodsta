@@ -1,7 +1,7 @@
-.review{
+.reviews-subscribe{
     background-image: url(../img/bg-review-mob-320.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .review-title{
@@ -129,7 +129,7 @@
 
 
  @media screen and (min-width: 480px) {
-    .review{
+    .reviews-subscribe{
         background-image: url(../img/bg-review-mob-480.jpg);
     }
     
@@ -142,23 +142,22 @@
         padding-top: 60px;
         padding-bottom: 120px;
     }
-    .review{
+    .reviews-subscribe{
         background-image: url(../img/bg-review-tab.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+      
 
     }
     
     .review-title{
         font-size: 42px;
         line-height: 1.17;
-        margin-left: 17px;
+        /* margin-left: 17px; */
     }
 
     .review-description{
         font-size: 16px;
         line-height: 1.19;
-        margin-left: 17px;
+        /* margin-left: 17px; */
         margin-bottom: 32px;
     }
 
@@ -167,13 +166,21 @@
         row-gap: 32px;
     }
 
+  
+
     .review-card-boy,
     .review-card-girl{
         width: 336px;
         height: 244px;
         padding-left: 0;
         padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
       }
+
+      .review-card-boy{
+        margin-right: 32px;
+    }
 
     .review-rate{
         margin-left: 12px;
@@ -208,7 +215,7 @@
 
 
  @media screen and (min-width: 1280px) {
-    .review{
+    .reviews-subscribe{
         background-image: url(../img/bg-review-desk.jpg);
            
     }
