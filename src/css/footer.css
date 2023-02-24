@@ -1,4 +1,5 @@
-.footer {
+.footer-block {
+  width: 100%;
   height: 560px;
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
   background-image: url(../img/foto_footer/mobile/footer-mobile-1.png),
@@ -11,7 +12,7 @@
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .footer {
+  .footer-block {
     background-image: url(../img/foto_footer/mobile/footer-mobile-1@2x.png),
       url(../img/foto_footer/mobile/footer-mobile-orang@2x.png),
       url(../img/foto_footer/mobile/footer-mobile-apple@2x.png);
@@ -62,45 +63,36 @@
 .footer-subscribe-label {
   position: relative;
 }
-.footer-input {
-  justify-content: center;
-  width: 279px;
-  height: 42px;
-  color: #757575;
-  border: 0.85px solid var(--main-color);
-  border-radius: 30px;
-  background-color: #fefefe;
-}
-.footer-input:hover,
-.footer-input:focus {
-  border-color: var(--dark-color);
-}
 
 .footer-subscribe-input {
+  justify-content: center;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.2;
-  color: var(--text-color);
-  width: 100%;
+  color: #757575;
+  background-color: #fefefe;
+  width: 279px;
+  height: 42px;
   margin-bottom: 20px;
   padding: 12px 11px;
   outline: transparent;
   text-transform: capitalize;
   border: 0.85px solid var(--main-color);
   border-radius: 30px;
+  transition: color var(--transition-duration-and-fun);
 }
 
-.footer-input::placeholder {
+.footer-subscribe-input::placeholder {
   font-size: 12px;
   line-height: 1.5;
   color: #505050;
 }
 
-.footer-input:valid {
+.footer-subscribe-input:valid {
   border: 0.85px solid var(--dark-color);
 }
 
-.footer-input:invalid:not(:placeholder-shown) {
+.footer-subscribe-input:invalid:not(:placeholder-shown) {
   border: 0.85px solid #ff705d;
 }
 
@@ -108,7 +100,7 @@
   opacity: 0;
   position: absolute;
   left: 0;
-  top: 34px;
+  top: 40px;
   display: inline-flex;
   align-items: center;
   font-size: 10px;
@@ -123,8 +115,13 @@
   width: 12px;
   height: 12px;
 }
-
-.footer-input:invalid:not(:placeholder-shown) + .footer-subscribe-error {
+.footer-subscribe-input:invalid:not(:placeholder-shown)
+  ~ .footer-submit-button {
+  opacity: 0.5;
+  cursor: no-drop;
+}
+.footer-subscribe-input:invalid:not(:placeholder-shown)
+  + .footer-subscribe-error {
   opacity: 1;
 }
 
@@ -142,8 +139,12 @@
   border-radius: 30px;
   margin-left: auto;
   padding: 11px 22px;
+  transition: background-color var(--transition-duration-and-fun);
 }
-
+.footer-submit-button:hover,
+.footer-submit-button:focus {
+  background-color: var(--main-color);
+}
 .footer-subscribe-text {
   margin-right: 0;
   margin-top: 20px;
@@ -192,25 +193,27 @@
 @media screen and (min-width: 480px) {
 }
 @media screen and (min-width: 768px) {
-  .footer {
-    height: 100%;
+  .footer-block {
+    height: 506px;
     width: 734px;
     background-image: url(../img/foto_footer/mobile/footer-mobile-1.png),
       url(../img/foto_footer/tablet/footer-part-orange.png),
+      url(../img/foto_footer/destop/kapli-2.png),
       url(../img/foto_footer/tablet/footer-part-apple.png),
       url(../img/foto_footer/mobile/footer-mobile-orang.png);
-    background-position: 50% 100%, -10% 100%, 105% 100%, 100% 10%;
-    background-size: 70%, 25%, 20%, 20%;
+    background-position: 50% 100%, -4% 100%, 90% 120%, 100% 100%, 100% 10%;
+    background-size: 60%, 25%, 20%, 20%, 20%;
     background-repeat: no-repeat;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .footer {
+    .footer-block {
       background-image: url(../img/foto_footer/mobile/footer-mobile-1@2x.png),
         url(../img/foto_footer/tablet/footer-part-orange@2x.png),
         url(../img/foto_footer/tablet/footer-part-apple@2x.png),
-        url(../img/foto_footer/mobile/footer-mobile-orang@2x.png);
+        url(../img/foto_footer/destop/kapli-2@2x.png)
+          url(../img/foto_footer/mobile/footer-mobile-orang@2x.png);
     }
   }
   .footer-nav-menu {
@@ -244,19 +247,26 @@
   .footer-subscribe-text {
     margin-top: 12px;
   }
-  .footer-list {
-    margin-top: 100px;
-  }
   .footer-block-second {
     display: flex;
     align-items: center;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .footer-list {
+    margin: 0;
+    justify-content: flex-start;
+    gap: 20px;
   }
   .footer-text {
     display: flex;
+    flex-shrink: 0;
+    margin-left: 236px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .footer {
+  .footer-block {
     width: 532px;
     background-image: url(../img/foto_footer/destop/big-kapli.png),
       url(../img/foto_footer/destop/naranja.png),
@@ -274,7 +284,7 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .footer {
+    .footer-block {
       background-image: url(../img/foto_footer/destop/big-kapli@2x.png),
         url(../img/foto_footer/destop/naranja@2x.png),
         url(../img/foto_footer/destop/banan@2x.png),
