@@ -103,6 +103,9 @@
     }
 }
 @media screen and (min-width: 1280px) {
+    .favorites_list{
+        gap: 31px;
+    }
     .favorites_item{
         width: 395px;
         height: 397px;
