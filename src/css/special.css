@@ -1,16 +1,42 @@
-.special-section {
-    background-image: url(./img/services-images/mobile-rectangle.jpg);
+.hero-special {
+    background-image: url(../img/services-images/mobile-rectangle.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 41px;
+    background-position: bottom center;
+    background-size: 100% 1122px;
+
+}
+
+.special-section {
     padding-bottom: 72px;
+}
+
+.special-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.special-images-wrap {
+    display: flex;
+    justify-content: center;
 }
 
 .special-image {
     margin-bottom: 8px;
+    width: 100%; 
+    height: auto;
+}
+
+.special-content-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .special-title {
+    width: 100%;
     max-width: 280px;
     margin-bottom: 28px;
     font-weight: 700;
@@ -19,6 +45,7 @@
 }
 
 .special-general-text {
+    width: 100%;
     max-width: 280px;
     font-weight: 400;
     font-size: 14px;
@@ -36,7 +63,7 @@
     height: 48px;
     border-radius: 50%;
     background-color: #ffffff;
-    background-image: url(./img/services-images/rocket-icon.svg);
+    background-image: url(../img/services-images/rocket-icon.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     display: flex;
@@ -44,7 +71,11 @@
 }
 
 .special-item:nth-child(2n)::before {
-    background-image: url(./img/services-images/order-icon.svg);
+    background-image: url(../img/services-images/order-icon.svg);
+}
+
+.special-item:nth-child(3n)::before {
+    display: none;
 }
 
 .special-item:not(:last-child) {
@@ -53,6 +84,7 @@
 
 
 .special-item-title {
+    width: 100%;
     max-width: 280px;
     margin-bottom: 16px;
     font-weight: 700;
@@ -61,6 +93,7 @@
 }
 
 .special-item-text {
+    width: 100%;
     max-width: 280px;
     font-weight: 400;
     font-size: 14px;
@@ -100,6 +133,7 @@
     display: flex;
     column-gap: 24px;
     align-items: center;
+    margin-top: 28px;
 }
 
 .text-wrap {
@@ -107,25 +141,43 @@
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {    
-    .special-section {
+    .hero-special {
         background-image: url(../img/services-images/mobile-second-rectangle.jpg);
+        background-size: 100% 1050px;
+
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
+    
+    .hero-special {
+        background-image: url(../img/services-images/tablet-services-bg.jpg);        background-repeat: no-repeat;
+        background-size: 100% 1122px;
+        }
+    
     .container {
         width: 734px;
         height: auto;
     }
     .special-section {
-        background-image: url(../img/services-images/tablet-services-bg.jpg);
-        padding-top: 150px;
         padding-bottom: 88px;
     }
+
+
+    .special-image {
+        width: 705px;
+        height: auto;
+    }
+
+    .special-content-wrap {
+        align-items: flex-start;
+    }
+
     .special-title {
         font-size: 42px;
         line-height: 1.16;
         max-width: 526px;
+        margin-bottom: 20px;
     }
     
     .special-general-text {
@@ -137,10 +189,76 @@
     .special-list {
         display: flex;
         column-gap: 80px;
+        flex-wrap: wrap;
     }
 
     .special-item:last-child {
         max-width: 252px;
     }
 
+    .special-item-text {
+        max-width: 288px;
+    }
+
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    .hero-special {
+        background-image: url(../img/services-images/desk-background.jpg);
+        background-size: 100% 824px;
+
+
+    }
+    .container {
+        width: 1200px;
+        height: 824px;
+    }
+
+    .special-wrap {
+        display: flex;
+        column-gap: 90px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+    .special-image {
+            width: 505px;
+            height: auto;
+        }
+  
+    .special-content-wrap {
+        align-items: flex-start;
+    }
+
+    .special-list {
+        display: flex;
+        column-gap: 67px;
+        flex-wrap: wrap;
+    }
+
+    .special-title {
+        font-size: 42px;
+        line-height: 1.2;
+        max-width: 526px;
+    }
+
+    .special-general-text {
+        font-size: 16px;
+        line-height: 1.5;
+        max-width: 490px;
+        margin-bottom: 40px;
+    }
+
+    .special-item-text {
+        line-height: 1.5;
+        max-width: 253px;
+    }
+
+    .text-wrap {
+        display: none;
+    }
 }

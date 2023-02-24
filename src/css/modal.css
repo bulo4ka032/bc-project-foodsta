@@ -183,14 +183,11 @@
   background-color: var(--button-color);
 }
 
-.order-form:invalid:not(:placeholder-shown) .submit-button {
+
   border: 2px solid #ff705d;
 }
 
 /* test */
-.order-form > .modal-input:placeholder-shown ~ .submit-button {
-  border-color: var(--button-color);
-}
 
 @media screen and (min-width: 480px) {
   .modal {
