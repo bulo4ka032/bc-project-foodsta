@@ -1,5 +1,7 @@
 .review{
     background-image: url(../img/bg-review-mob-320.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .review-title{
