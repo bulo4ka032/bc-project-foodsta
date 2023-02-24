@@ -43,9 +43,10 @@
   color: var(text-color);
   text-align: center;
 }
-.input-wrap {
+/* .order-form {
   position: relative;
-}
+} */
+
 .form-label {
   margin-left: 14px;
   margin-bottom: 2px;
@@ -83,9 +84,6 @@
   font-size: 13px;
   line-height: 150%;
 }
-.submit-button:hover {
-  background-color: var(--button-color);
-}
 
 .modal-input::placeholder {
   font-weight: 400;
@@ -107,8 +105,8 @@
 .name-error {
   opacity: 0;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 30px;
+  top: 108px;
   transform: translate(14px, 48px);
 
   display: inline-flex;
@@ -128,8 +126,8 @@
 .phone-error {
   opacity: 0;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 30px;
+  top: 204px;
   transform: translate(14px, 48px);
 
   display: inline-flex;
@@ -149,8 +147,8 @@
 .email-error {
   opacity: 0;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 30px;
+  top: 300px;
   transform: translate(14px, 48px);
 
   display: inline-flex;
@@ -169,34 +167,28 @@
 
 /* Display error messages  */
 
-.modal-input:invalid:not(:placeholder-shown) + .name-error {
+.modal-input:not(:focus):not(:placeholder-shown):invalid + .name-error {
   opacity: 1;
 }
-.modal-input:invalid:not(:placeholder-shown) + .phone-error {
+.modal-input:not(:focus):not(:placeholder-shown):invalid + .phone-error {
   opacity: 1;
 }
-.modal-input:invalid:not(:placeholder-shown) + .email-error {
+.modal-input:not(:focus):not(:placeholder-shown):invalid + .email-error {
   opacity: 1;
 }
 
-.modal-input:valid + .modal-input:valid + .modal-input:valid + .submit-button {
+/* Button colorise */
+
+.order-form:valid .submit-button {
   background-color: var(--button-color);
 }
 
-<<<<<<< Updated upstream
-=======
-.order-form:invalid .submit-button {
+
   border: 2px solid #ff705d;
 }
 
 /* test */
-.modal-input: (: placeholder-shown) + 
-.modal-input: (: placeholder-shown) + 
-.modal-input: (: placeholder-shown) ~ .submit-button {
-  border: 2px solid var(--button-color);
-}
 
->>>>>>> Stashed changes
 @media screen and (min-width: 480px) {
   .modal {
     width: 458px;
