@@ -1,9 +1,9 @@
 .footer {
   height: 560px;
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
-  background-image: url(../img/foto_footer/footer-mobile-1.png),
-    url(../img/foto_footer/footer-mobile-orang.png),
-    url(../img/foto_footer/footer-mobile-apple.png);
+  background-image: url(../img/foto_footer/mobile/footer-mobile-1.png),
+    url(../img/foto_footer/mobile/footer-mobile-orang.png),
+    url(../img/foto_footer/mobile/footer-mobile-apple.png);
   background-position: 50% 103%, 100% -10%, 0% 17%;
   background-size: 100%, 30%, 35%;
   background-repeat: no-repeat;
@@ -12,9 +12,9 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .footer {
-    background-image: url(../img/foto_footer/footer-mobile-1@2x.png),
-      url(../img/foto_footer/footer-mobile-orang@2x.png),
-      url(../img/foto_footer/footer-mobile-apple@2x.png);
+    background-image: url(../img/foto_footer/mobile/footer-mobile-1@2x.png),
+      url(../img/foto_footer/mobile/footer-mobile-orang@2x.png),
+      url(../img/foto_footer/mobile/footer-mobile-apple@2x.png);
   }
 }
 /* =======Logo and menu======= */
@@ -132,18 +132,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 11px 22px;
-
   font-weight: 500;
   font-size: 13px;
   line-height: 1.5;
   color: var(--text-color);
   background-color: rgba(255, 255, 255, 1);
-
   border-radius: 30px;
   border: 0.85px solid var(--dark-color);
   border-radius: 30px;
-  display: block;
   margin-left: auto;
   padding: 11px 22px;
 }
@@ -192,4 +188,101 @@
   font-size: 10px;
   line-height: 1.2;
   color: var(--text-color);
+}
+@media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    height: 100%;
+    width: 734px;
+    background-image: url(../img/foto_footer/mobile/footer-mobile-1.png),
+      url(../img/foto_footer/tablet/footer-part-orange.png),
+      url(../img/foto_footer/tablet/footer-part-apple.png),
+      url(../img/foto_footer/mobile/footer-mobile-orang.png);
+    background-position: 50% 100%, -10% 100%, 105% 100%, 100% 10%;
+    background-size: 70%, 25%, 20%, 20%;
+    background-repeat: no-repeat;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .footer {
+      background-image: url(../img/foto_footer/mobile/footer-mobile-1@2x.png),
+        url(../img/foto_footer/tablet/footer-part-orange@2x.png),
+        url(../img/foto_footer/tablet/footer-part-apple@2x.png),
+        url(../img/foto_footer/mobile/footer-mobile-orang@2x.png);
+    }
+  }
+  .footer-nav-menu {
+    display: flex;
+    gap: 28px;
+    margin-left: 114px;
+    margin-right: 233px;
+  }
+  .footer-block-first {
+    padding-top: 100px;
+  }
+  .footer-wraper {
+    justify-content: none;
+  }
+
+  .footer-logo {
+    margin-bottom: 40px;
+  }
+  .footer-subscribe-input {
+    width: 279px;
+    margin-right: 13px;
+  }
+  .footer-submit-button {
+    width: 103px;
+    height: 42px;
+    margin-left: 0;
+  }
+  .footer-subscribe-label {
+    display: flex;
+  }
+  .footer-subscribe-text {
+    margin-top: 12px;
+  }
+  .footer-list {
+    margin-top: 100px;
+  }
+  .footer-block-second {
+    display: flex;
+    align-items: center;
+  }
+  .footer-text {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    width: 532px;
+    background-image: url(../img/foto_footer/destop/big-kapli.png),
+      url(../img/foto_footer/destop/naranja.png),
+      url(../img/foto_footer/destop/banan.png),
+      url(../img/foto_footer/destop/aple.png),
+      url(../img/foto_footer/destop/kapli-smile.png),
+      url(../img/foto_footer/destop/kapli-2.png),
+      url(../img/foto_footer/destop/manzana.png),
+      url(../img/foto_footer/destop/naranja.png);
+    background-position: 50% 100%, 50% 100%, 75% 100%, 25% 100%, 20% 100%,
+      80% 100%, 100% 100%, 0% 100%;
+    background-size: 100%, 30%, 35%, 35%, 35%, 35%, 35%, 35%;
+    background-repeat: no-repeat;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .footer {
+      background-image: url(../img/foto_footer/destop/big-kapli@2x.png),
+        url(../img/foto_footer/destop/naranja@2x.png),
+        url(../img/foto_footer/destop/banan@2x.png),
+        url(../img/foto_footer/destop/aple@2x.png),
+        url(../img/foto_footer/destop/kapli-smaile@2x.png),
+        url(../img/foto_footer/destop/kapli-2@2x.png),
+        url(../img/foto_footer/destop/manzana@2x.png),
+        url(../img/foto_footer/destop/naranja@2x.png);
+    }
+  }
 }
