@@ -1,14 +1,20 @@
 <section id="service" class="special-section section">
-    <div class="container">
+    <div class="container special-wrap">
         <div class="special-images-wrap">
-                <img 
-                srcset="./img/services-images/mobile-apple-png-2x.png 2x"
-                src="./img/services-images/mobile-apple-png.png" alt="green apple" width="202" height="256" class="special-image">
+                <picture>
+                    <source media="(min-width: 1280px)" 
+                    srcset="./img/services-images/desk-apple.png 1x, ./img/services-images/desk-apple-2x.png 2x">
+                    <source media="(min-width: 768px)" 
+                    srcset="./img/services-images/tablet-apples.png 1x, ./img/services-images/tablet-apples-2x.png 2x">
+                    <source media="(min-width: 320px)" 
+                    srcset="./img/services-images/mobile-apple-png.png 1x, ./img/services-images/mobile-apple-png-2x.png 2x">
+                    <img src="./img/services-images/desk-apple.png" alt="green apple" class="special-image" loading="lazy">
+                </picture>
         </div>
         <div class="special-content-wrap">
-            <h2 class="special-title">What's Special About Our Offerings</h2>
-            <p class="special-general-text">With our platform, you can browse through a diverse selection of cuisines and local restaurants, and choose from a
-            variety of dishes that cater to your specific taste buds.</p>
+                <h2 class="special-title">What's Special About Our Offerings</h2>
+                <p class="special-general-text">With our platform, you can browse through a diverse selection of cuisines and local restaurants, and choose from a
+                variety of dishes that cater to your specific taste buds.</p>
             <ul class="special-list">
                 <li class="special-item">
                     <h3 class="special-item-title">Fastest Delivery</h3>
@@ -20,17 +26,19 @@
                     <p class="special-item-text">You can browse through a wide variety of cuisines and restaurants, select your favorite meals, and place your order in
                     just a few clicks.</p>
                 </li>
+                <li class="special-item">
+                    <div class="special-bottom-wrap">
+                        <button type="button" class="special-button" data-modal-open>Order Now</button>
+                        <div class="text-wrap">
+                            <span class="read-more-text">Read More</span>
+                            <span>
+                                <svg class="arrow-icon" width="13" height="13">
+                                    <use href="./img/icons.svg#icon-arrow-right-no-border"></use>
+                                </svg>
+                            </span>
+                    </div>
+                </li>
             </ul>
-            <div class="special-bottom-wrap">
-                <button type="button" class="special-button" data-modal-open>Order Now</button>
-                <div class="text-wrap">
-                    <span class="read-more-text">Read More</span>
-                    <span>
-                        <svg class="arrow-icon" width="13" height="13">
-                            <use href="./img/icons.svg#icon-arrow-right-no-border"></use>
-                        </svg>
-                    </span>
-                </div>
             </div>
         </div>
     </div>
