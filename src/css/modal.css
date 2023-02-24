@@ -185,13 +185,14 @@
   background-color: var(--button-color);
 }
 
-.order-form:invalid .submit-button {
-  border: 2px solid #ff705d;
+.modal-input:invalid:placeholder-shown ~ .submit-button {
+  border-color: var(--button-color);
+  cursor: not-allowed;
 }
-
-/* .order-form:invalid > .modal-input:placeholder-shown ~ .submit.button {
-  border: 2px solid var(--button-color);
-} */
+.modal-input:invalid:not(:placeholder-shown) ~ .submit-button {
+  border-color: #ff705d;
+  cursor: not-allowed;
+}
 
 /* Media  */
 @media screen and (min-width: 480px) {
