@@ -65,13 +65,13 @@ button {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 320px;
+    width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 734px;
   }
 
   .section {
@@ -82,6 +82,6 @@ button {
 
 @media screen and (min-width: 1280px) {
   .container {
-    width: 1280px;
+    width: 1278px;
   }
 }
