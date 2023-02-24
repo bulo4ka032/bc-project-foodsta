@@ -179,10 +179,21 @@
   opacity: 1;
 }
 
-.modal-input:valid + .modal-input:valid + .modal-input:valid + .submit-button {
+/* Conditions of colorizing button  */
+
+.order-form:valid .submit-button {
   background-color: var(--button-color);
 }
 
+.order-form:invalid .submit-button {
+  border: 2px solid #ff705d;
+}
+
+/* .order-form:invalid > .modal-input:placeholder-shown ~ .submit.button {
+  border: 2px solid var(--button-color);
+} */
+
+/* Media  */
 @media screen and (min-width: 480px) {
   .modal {
     width: 458px;
