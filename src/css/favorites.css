@@ -1,30 +1,3 @@
-.upward{
-    position: fixed;
-    bottom: 1340px;
-    right: 40px;
-    width: 50px;
-    height: 50px;
-    background: url(../img/arrow_scroll.png);
-    background-size: cover;
-    background-color: transparent;
-    cursor: pointer;
-    visibility: hidden;
-    opacity: 0;
-   
-    transform: translateY(-1500);
-    transition: transform 0.5s;
-    scale: 1;
-    
-}
-.upward:hover{
-    scale: 1.1;
-}
-.upward.active{
-    bottom: 40px;
-    visibility: visible;
-    opacity: 1;
-}
-
 .favorites_title{ 
     width: 280px;
     font-weight: 700;
@@ -71,15 +44,7 @@
     border-color: var(--button-color);
     cursor: pointer;
 }
-.zoom_img{
-    scale:1.0;
-    transition: scale var(--transition-duration-and-fun);
-}
-.favorites_links:hover .zoom_img,
-.favorites_links:focus .zoom_img{
-    scale: 1.1;
-    transition: scale var(--transition-duration-and-fun)
-}
+
 .zoom_link{
     scale:1.0;
     transition: scale var(--transition-duration-and-fun);
@@ -150,5 +115,31 @@
     .favorites_img{
         width: 315px;
         height: 315px;
+    }
+    .upward{
+        position: fixed;
+        bottom: 1340px;
+        right: 40px;
+        width: 50px;
+        height: 50px;
+        background: url(../img/arrow_scroll.png);
+        background-size: cover;
+        background-color: transparent;
+        cursor: pointer;
+        visibility: hidden;
+        opacity: 0;
+       
+        transform: translateY(-1500);
+        transition: transform 0.5s;
+        scale: 1;
+        
+    }
+    .upward:hover{
+        scale: 1.1;
+    }
+    .upward.active{
+        bottom: 40px;
+        visibility: visible;
+        opacity: 1;
     }
 }
