@@ -183,6 +183,20 @@
   background-color: var(--button-color);
 }
 
+<<<<<<< Updated upstream
+=======
+.order-form:invalid .submit-button {
+  border: 2px solid #ff705d;
+}
+
+/* test */
+.modal-input: (: placeholder-shown) + 
+.modal-input: (: placeholder-shown) + 
+.modal-input: (: placeholder-shown) ~ .submit-button {
+  border: 2px solid var(--button-color);
+}
+
+>>>>>>> Stashed changes
 @media screen and (min-width: 480px) {
   .modal {
     width: 458px;
