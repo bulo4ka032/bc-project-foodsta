@@ -81,11 +81,10 @@
     letter-spacing: -0.02em;
     color: var(--text-color);
     margin-top: 28px;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
  }
 
 .review-photo{
-    margin-left: 8px;
     margin-right: 16px;
 }
 
@@ -185,7 +184,7 @@
         font-size: 18px;
         line-height: 1.17;
         margin-left: 12px;
-        margin-right: auto;
+        margin-right: 8px;
         margin-top: 28px;
         margin-bottom: 40px;
     }
@@ -194,7 +193,9 @@
         width: 1px;
         height: 52px;
     }
-     
+      .review-photo{
+        margin-left: 8px;
+      }
  }
     
 
@@ -247,7 +248,7 @@
       }
 
     .review-footer{
-        margin-left: 14px;
+        margin-left: 4px;
     }
 
  }
