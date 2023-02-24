@@ -107,6 +107,11 @@
   line-height: 1.5;
 }
 
+.subscribe-input:invalid:not(:placeholder-shown) ~ .subscribe-button {
+  opacity: 0.5;
+  cursor: no-drop;
+}
+
 .subscribe-button:hover,
 .subscribe-button:focus {
   background-color: var(--main-color);
