@@ -13,20 +13,29 @@
 
             <label for="input-name" class="form-label">Name</label>
             <div class="input-wrap">
-                <input type="text" name="name" class="modal-input" placeholder="Your name" required minlength="8"
-                    id="input-name">
+                <input type="text" name="name" class="modal-input" placeholder="Your name" required minlength="3"
+                    maxlength="25" id="input-name">
+                <span class="phone-error">
+                    The name must be between 3 and 25 characters
+                </span>
             </div>
 
             <label for="input-tel" class="form-label">Phone</label>
             <div class="input-wrap">
                 <input type="tel" name="phone" class="modal-input" placeholder="+38(0_ _) _ _ _   _ _   _ _" required
-                    length="13" id="input-tel">
+                    pattern="\d\d\d\d\d\d\d\d\d\d" minlength="10" maxlength="10" id="input-tel">
+                <span class="phone-error">
+                    This phone must be in the format 099 000 00 00
+                </span>
             </div>
 
             <label for="input-email" class="form-label">Email</label>
             <div class="input-wrap">
                 <input type="email" name="email" class="modal-input last" placeholder="example@gmail.com" required
-                    id="input-email">
+                    minlength="6" maxlength="25" id="input-email">
+                <span class="email-error">
+                    Not a valid email address (example@email.com)
+                </span>
             </div>
             <button type="submit" class="submit-button">Send</button>
     </div>
