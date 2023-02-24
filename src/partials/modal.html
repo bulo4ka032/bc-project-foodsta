@@ -22,7 +22,11 @@
 
             <label for="input-tel" class="form-label">Phone</label>
 
-
+            <input type="tel" name="phone" class="modal-input" placeholder="+38(0_ _) _ _ _   _ _   _ _" required
+                pattern="\d\d\d\d\d\d\d\d\d\d" minlength="10" maxlength="10" id="input-tel">
+            <span class="phone-error">
+                This phone must be in the format 099 000 00 00
+            </span>
 
 
             <label for="input-email" class="form-label">Email</label>
@@ -33,7 +37,7 @@
                 Not a valid email address (example@email.com)
             </span>
 
-
+            <button type="submit" class="submit-button">Send</button>
+        </form>
     </div>
 </div>
-  </form>
