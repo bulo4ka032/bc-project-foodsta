@@ -1,79 +1,79 @@
 button {
-       font-weight: 500;
-        font-size: 13px;
-        line-height: 1.5;
-        color: var(--text-color);
-        border: none;
-        border-radius: 30px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-color);
+  border: none;
+  border-radius: 30px;
 }
 
 .dark-btn {
-    background-color: var(--button-color);
+  background-color: var(--button-color);
 }
 
 .light-btn {
-    background-color: white;
-    border: 0.854167px solid var(--dark-color);
+  background-color: white;
+  border: 0.854167px solid var(--dark-color);
 }
 
 .main-btn {
-    padding: 6px 18px;
+  padding: 6px 18px;
 }
 
 .secondary-btn {
-    padding: 10px 22px;
+  padding: 10px 22px;
 }
 
 .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .is-hidden {
-    opacity: 0;
-    visibility: none;
-    pointer-events: none;
+  opacity: 0;
+  visibility: none;
+  pointer-events: none;
 }
 
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
-    width: 100%;
-    margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 480px) {
-    .container {
-        width: 320px;
-    }
+  .container {
+    width: 320px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .container {
-        width: 768px;
-    }
+  .container {
+    width: 768px;
+  }
 
-    .section {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .container {
-        width: 1280px;
-    }
+  .container {
+    width: 1280px;
+  }
 }
