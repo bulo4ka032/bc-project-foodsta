@@ -89,7 +89,8 @@
   background-image: url(../img/subscribe/warning.svg);
 }
 
-.subscribe-input:invalid:not(:placeholder-shown) + .subscribe-error {
+.subscribe-input:invalid:not(:placeholder-shown):not(:focus-visible)
+  + .subscribe-error {
   opacity: 1;
 }
 
