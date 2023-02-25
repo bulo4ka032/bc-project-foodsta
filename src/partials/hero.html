@@ -9,9 +9,9 @@
       </p>
       <button type="submit" class="hero-btn" data-modal-open>Order Now</button>
     </div>
-    <div class="slider-container">
+    <div class="slider-container swiper">
       <div class="outer-circle">
-        <button type="button" class="left-slider slider-btn">
+        <button type="button" class="left-slider slider-btn swiper-button-prev">
           <svg class="left-arrow" width="16" height="29">
             <use
               href="./img/hero-images/symbol-defs.svg#icon-vector-left"
@@ -19,10 +19,9 @@
             ></use>
           </svg>
         </button>
-
-        <div class="hero-gallery-wrap">
-          <ul class="gallery-list swiper swiper-container">
-            <li class="gallery-item swiper-wrapper">
+        <div class="hero-gallery-wrap swiper-container">
+          <ul class="gallery-list swiper-wrapper">
+            <li class="gallery-item swiper-slide">
               <picture>
                 <source
                   media="(min-width: 1280px)"
@@ -45,7 +44,7 @@
                 />
               </picture>
             </li>
-            <li class="gallery-item swiper-wrapper">
+            <li class="gallery-item swiper-slide">
               <picture>
                 <source
                   media="(min-width: 1280px)"
@@ -68,7 +67,7 @@
                 />
               </picture>
             </li>
-            <li class="gallery-item swiper-wrapper">
+            <li class="gallery-item swiper-slide">
               <picture>
                 <source
                   media="(min-width: 1280px)"
@@ -92,7 +91,10 @@
               </picture>
             </li>
           </ul>
-          <button type="button" class="right-slider slider-btn">
+          <button
+            type="button"
+            class="right-slider slider-btn swiper-button-next"
+          >
             <svg class="right-arrow" width="16" height="29">
               <use
                 href="./img/hero-images/symbol-defs.svg#icon-vector-right"
