@@ -7,6 +7,7 @@
 }
 
 .special-section {
+    padding-top: 50px;
     padding-bottom: 72px;
 }
 
@@ -47,7 +48,6 @@
 .special-general-text {
     width: 100%;
     max-width: 280px;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.4;
     color: var(--text-color);
@@ -95,7 +95,6 @@
 .special-item-text {
     width: 100%;
     max-width: 280px;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.4;
     color: var(--text-color);
@@ -138,6 +137,11 @@
 
 .text-wrap {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    column-gap: 4px;
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {    
@@ -149,20 +153,11 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-    
+
     .hero-special {
         background-image: url(../img/services-images/tablet-services-bg.jpg);        background-repeat: no-repeat;
-        background-size: 100% 1122px;
+        background-size: 100% 1100px;
         }
-    
-    .container {
-        width: 734px;
-        height: auto;
-    }
-    .special-section {
-        padding-bottom: 88px;
-    }
-
 
     .special-image {
         width: 705px;
@@ -181,8 +176,6 @@
     }
     
     .special-general-text {
-        font-size: 16px;
-        line-height: 1.5;
         max-width: 500px;
     }
 
@@ -210,10 +203,6 @@
         background-size: 100% 824px;
 
 
-    }
-    .container {
-        width: 1200px;
-        height: 824px;
     }
 
     .special-wrap {
@@ -256,9 +245,5 @@
     .special-item-text {
         line-height: 1.5;
         max-width: 253px;
-    }
-
-    .text-wrap {
-        display: none;
     }
 }
