@@ -109,7 +109,7 @@
 }
 
 .subscribe-input:invalid:not(:placeholder-shown) ~ .subscribe-button {
-  opacity: 0.5;
+  border: 0.854167px solid #ff705d;
   cursor: no-drop;
 }
 
@@ -138,6 +138,11 @@
 }
 
 @media screen and (min-width: 768px) {
+  .subscribe {
+    padding-top: 82px;
+    padding-bottom: 100px;
+  }
+
   .subscribe-wrap {
     justify-content: flex-end;
   }
@@ -176,6 +181,13 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .subscribe {
+    position: relative;
+    padding-top: 0;
+    top: -47px;
+    padding-bottom: 17px;
+  }
+
   .subscribe-wrap {
     align-items: center;
     justify-content: space-between;
