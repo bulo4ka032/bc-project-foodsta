@@ -1,6 +1,5 @@
-.order {
-  margin-top: 159px;
-  margin-bottom: 3px;
+.hero-section {
+  padding: 60px 0 50px;
 }
 
 .hero-title {
@@ -15,27 +14,14 @@
 .hero-desc {
   font-weight: 400;
   width: 514px;
-  height: 69px;
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 40px;
 }
 
 .hero-container {
   display: flex;
-  justify-content: space-between;
   width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.slider-container {
-  display: flex;
-  justify-content: flex-end;
-  width: 528px;
-  height: 528px;
-  margin-top: 14px;
 }
 
 .outer-circle {
@@ -46,8 +32,10 @@
   border-radius: 50%;
 }
 
-.left-arrow {
-  fill: black;
+.left-arrow,
+.right-arrow {
+  fill: var(--text-color);
+  transition: fill var(--transition-duration-and-fun);
 }
 
 .left-slider {
@@ -72,12 +60,17 @@
   height: 48px;
   padding: 0;
   margin: 0;
-  transition: fill, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-duration-and-fun);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.left-arrow:is(:hover, :focus),
+.right-arrow:is(:hover, :focus) {
+  fill: var(--dark-color);
 }
 
 .hero-btn {
@@ -101,10 +94,6 @@
     display: none;
   }
 
-  .order {
-    margin-top: 60px;
-    margin-bottom: 32px;
-  }
   .hero-container {
     width: 100%;
   }
@@ -126,10 +115,6 @@
 @media screen and (min-width: 480px) {
   .hero-container {
     width: 320px;
-  }
-  .order {
-    margin-top: 60px;
-    margin-bottom: 32px;
   }
 
   .hero-title {
@@ -156,8 +141,9 @@
     width: 320px;
     height: 320px;
     position: absolute;
-    right: 50px;
-    top: 120px;
+    right: 32px;
+    top: 89px;
+    margin: 0;
   }
   .hero-container {
     width: 100%;
@@ -189,11 +175,64 @@
     width: 11px;
     height: 20px;
   }
-
-  .hero-title {
-    width: 100%;
-  }
 }
 
 @media screen and (min-width: 1280px) {
+  .hero-section {
+    padding-top: 159px;
+    padding-bottom: 3px;
+    position: relative;
+    width: 1278px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-container {
+    position: static;
+    width: 1278px;
+  }
+
+  .slider-container {
+    display: flex;
+    width: 580px;
+    height: 580px;
+    position: absolute;
+    right: 14px;
+    top: 14px;
+  }
+
+  .hero-title {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+
+  .hero-desc {
+    width: 511px;
+    margin-bottom: 40px;
+  }
+
+  .outer-circle {
+    width: 528px;
+    height: 528px;
+    border: 26px solid var(--main-color);
+  }
+
+  .slider-btn {
+    width: 48px;
+    height: 40px;
+    transform: translateY(-10%);
+  }
+  .left-arrow,
+  .right-arrow {
+    width: 16px;
+    height: 29px;
+  }
+
+  .left-slider {
+    transform: translateX(-10px);
+  }
+
+  .right-slider {
+    transform: translateX(10px);
+  }
 }
