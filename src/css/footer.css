@@ -215,6 +215,9 @@
   }
 
   @media screen and (min-width: 1280px) {
+    .container {
+      height: 395px;
+    }
     .footer-block {
       height: 395px;
       background-image: url(../img/foto_footer/destop/big-kapli.png),
