@@ -75,6 +75,9 @@
   transition: fill, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-btn {
@@ -150,6 +153,45 @@
 @media screen and (min-width: 768px) {
   .slider-container {
     display: flex;
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    right: 50px;
+    top: 120px;
+  }
+  .hero-container {
+    width: 100%;
+    position: relative;
+  }
+
+  .outer-circle {
+    width: 292px;
+    height: 292px;
+    border: 14px solid var(--yellow-main);
+  }
+  .hero-title {
+    width: 537px;
+    font-size: 42px;
+  }
+
+  .hero-desc {
+    width: 336px;
+    font-size: 16px;
+  }
+  .slider-btn {
+    width: 34px;
+    height: 28px;
+    transform: translateY(-95px);
+  }
+
+  .left-arrow,
+  .right-arrow {
+    width: 11px;
+    height: 20px;
+  }
+
+  .hero-title {
+    width: 100%;
   }
 }
 
