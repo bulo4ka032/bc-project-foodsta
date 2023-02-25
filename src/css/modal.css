@@ -169,13 +169,14 @@
 
 /* Display error messages  */
 
-.modal-input:invalid:not(:placeholder-shown) + .name-error {
+.modal-input:not(:focus):not(:placeholder-shown):invalid + .name-error {
   opacity: 1;
 }
-.modal-input:invalid:not(:placeholder-shown) + .phone-error {
+
+.modal-input:not(:focus):not(:placeholder-shown):invalid + .phone-error {
   opacity: 1;
 }
-.modal-input:invalid:not(:placeholder-shown) + .email-error {
+.modal-input:not(:focus):not(:placeholder-shown):invalid + .email-error {
   opacity: 1;
 }
 
@@ -191,6 +192,7 @@
 }
 .modal-input:invalid:not(:placeholder-shown) ~ .submit-button {
   border-color: #ff705d;
+  opacity: 0.5;
   cursor: not-allowed;
 }
 
