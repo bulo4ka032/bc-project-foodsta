@@ -4,8 +4,9 @@
   background-image: url(../img/foto_footer/mobile/footer-mobile-1.png),
     url(../img/foto_footer/mobile/footer-mobile-orang.png),
     url(../img/foto_footer/mobile/footer-mobile-apple.png);
-  background-position: 55% 100%, 100% 5%, 0% 25%;
-  background-size: 80%, 30%, 30%;
+  background-position: bottom 0 right 50%, bottom 360px right 0,
+    bottom 370px left 0;
+  background-size: 253px, 100px, 120px;
   background-repeat: no-repeat;
 }
 @media (min-device-pixel-ratio: 2),
@@ -74,7 +75,7 @@
   line-height: 1.2;
   color: #757575;
   background-color: #fefefe;
-  width: 279px;
+  width: 100%;
   height: 42px;
   margin-bottom: 20px;
   padding: 12px 11px;
@@ -123,7 +124,7 @@
   opacity: 0.5;
   cursor: no-drop;
 }
-.footer-subscribe-input:invalid:not(:placeholder-shown)
+.footer-subscribe-input:invalid:not(:placeholder-shown):not(:focus-visible)
   + .footer-subscribe-error {
   opacity: 1;
 }
@@ -205,8 +206,9 @@
       url(../img/foto_footer/tablet/kapli.png),
       url(../img/foto_footer/tablet/footer-part-apple.png),
       url(../img/foto_footer/mobile/footer-mobile-orang.png);
-    background-position: 50% 100%, -4% 100%, 85% 109%, 100% 100%, 100% 10%;
-    background-size: 80%, 20%, 20%, 20%, 20%;
+    background-position: bottom 0px right 20px, -4% 100%, 85% 109%, 100% 100%,
+      bottom 360px right 0px;
+    background-size: 650px, 20%, 20%, 20%, 100px;
     background-repeat: no-repeat;
   }
   @media (min-device-pixel-ratio: 2),
