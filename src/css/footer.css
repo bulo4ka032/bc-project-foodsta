@@ -83,20 +83,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--text-color);
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 30px;
-  border: 0.85px solid var(--dark-color);
-  border-radius: 30px;
   margin-left: 0;
   margin-right: auto;
   padding: 8px 22px;
-  transition: background-color var(--transition-duration-and-fun),
-    border var(--transition-duration-and-fun);
+  transition: border var(--transition-duration-and-fun);
 }
 .footer-submit-button:hover,
 .footer-submit-button:focus {
-  background-color: rgba(255, 255, 255, 1);
   border: 0.85px solid var(--main-color);
 }
 .footer-error {
