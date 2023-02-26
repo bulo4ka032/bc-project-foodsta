@@ -96,8 +96,11 @@
 }
 .footer-submit-button:hover,
 .footer-submit-button:focus {
-  border: 0.85px solid var(--main-color);
   background-color: rgba(255, 255, 255, 1);
+  border: 0.85px solid var(--main-color);
+}
+.footer-error {
+  top: 32px;
 }
 .footer-subscribe-text {
   margin-right: 0;
@@ -157,7 +160,7 @@
 }
 @media screen and (min-width: 768px) {
   .footer-container {
-    width: 696px;
+    width: 734px;
   }
   .footer-block {
     max-height: 506px;
@@ -273,14 +276,22 @@
     }
 
     .footer-subscribe {
-      width: 394px;
+      width: 395px;
+      display: flex;
+      flex-direction: column;
       margin-top: 0;
       margin-left: auto;
+    }
+    .footer-error {
+      top: 42px;
     }
     .footer-text {
       margin-left: auto;
     }
     .footer-nav {
+      margin-right: 0;
+    }
+    .footer-submit-button {
       margin-right: 0;
     }
   }
