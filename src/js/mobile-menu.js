@@ -5,7 +5,7 @@
   
     const toggleMenu = () => {
       const isMenuOpen =
-        openMenuBtn.getAttribute('aria-expanded') === true || false;
+        openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
         openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
         mobileMenu.classList.toggle('is-open');
   
@@ -15,8 +15,7 @@
       // bodyScrollLock[scrollLockMethod](document.body);
     };
   
-    mobileMenu.addEventListener('click', toggleMenu)
-  
+    // mobileMenu.addEventListener('click', toggleMenu);
     openMenuBtn.addEventListener('click', toggleMenu);
     closeMenuBtn.addEventListener('click', toggleMenu);
   
