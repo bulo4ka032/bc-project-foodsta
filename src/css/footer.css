@@ -42,7 +42,7 @@
 }
 /* ======Subscribe====== */
 .footer-subscribe {
-  margin-top: 40x;
+  margin-top: 40px;
 }
 .subscribe-text {
   font-weight: 500;
@@ -151,9 +151,9 @@
       url(../img/foto_footer/tablet/footer-part-apple.png),
       url(../img/foto_footer/mobile/footer-mobile-orang.png);
     background-position: bottom 0 left 100px, bottom 0 right 65%,
-      bottom 0 left -10px, bottom 0 right 110px, bottom 0 right 40%,
+      bottom 0 left -10px, bottom 0 right 110px, bottom 0 right 45%,
       bottom 0 right 0, bottom 141px right 0px;
-    background-size: 168px, 200px, 140px, 168px, 200px, 170px, 20%;
+    background-size: 168px, 140px, 140px, 168px, 180px, 150px, 20%;
     background-repeat: no-repeat;
   }
   @media (min-device-pixel-ratio: 2),
@@ -226,9 +226,9 @@
         url(../img/foto_footer/destop/kapli-2.png),
         url(../img/foto_footer/destop/manzana.png),
         url(../img/foto_footer/destop/naranja.png);
-      background-position: 45% 100%, 50% 100%, 73% 100%, 20% 100%, 100% 100%,
-        87% 100%, 28% 100%, 5% 100%;
-      background-size: 35%, 30%, 20%, 13%, 15%, 15%, 12%, 15%;
+      background-position: 45% 100%, 50% 100%, 70% 100%, 25% 100%, 95% 100%,
+        87% 100%, 32% 100%, 15% 100%;
+      background-size: 30%, 25%, 15%, 10%, 10%, 15%, 10%, 10%;
       background-repeat: no-repeat;
     }
     @media (min-device-pixel-ratio: 2),
@@ -249,6 +249,10 @@
       display: flex;
       justify-content: space-between;
       padding-top: 0;
+    }
+
+    .footer-subscribe {
+      margin-top: 0;
     }
     .footer-text {
       margin-left: auto;
