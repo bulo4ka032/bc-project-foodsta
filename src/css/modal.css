@@ -187,21 +187,35 @@
 .modal-input:invalid:placeholder-shown ~ .submit-button {
   border-color: var(--dark-color);
   cursor: not-allowed;
+  /* pointer-events: none; */
 }
 .modal-input:invalid:not(:placeholder-shown) ~ .submit-button {
   border-color: #ff705d;
   opacity: 0.5;
   cursor: not-allowed;
+  /* pointer-events: none; */
 }
 
-/* .message {
+.message {
+  position: absolute;
+  top: 325px;
+  left: 145px;
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
 }
 .message-text {
-  color: #ffffff;
-} */
+  position: absolute;
+  color: var(--background-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}
+.order-form:invalid .submit-button:hover + .message {
+  opacity: 1;
+}
 
 /* Media  */
 @media screen and (min-width: 480px) {
