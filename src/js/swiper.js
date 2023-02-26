@@ -2,10 +2,6 @@ var swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
   spaceBetween: 0,
   centeredSlides: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -13,5 +9,11 @@ var swiper = new Swiper('.swiper-container', {
   navigation: {
     nextEl: '.right-slider',
     prevEl: '.left-slider',
+    },
+  loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: true,
   },
+
 });
