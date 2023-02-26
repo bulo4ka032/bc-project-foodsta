@@ -83,9 +83,6 @@
   font-size: 13px;
   line-height: 150%;
 }
-/* .submit-button:hover {
-  background-color: var(--button-color);
-} */
 
 .modal-input::placeholder {
   font-weight: 400;
@@ -169,13 +166,14 @@
 
 /* Display error messages  */
 
-.modal-input:invalid:not(:placeholder-shown) + .name-error {
+.modal-input:not(:focus):not(:placeholder-shown):invalid + .name-error {
   opacity: 1;
 }
-.modal-input:invalid:not(:placeholder-shown) + .phone-error {
+
+.modal-input:not(:focus):not(:placeholder-shown):invalid + .phone-error {
   opacity: 1;
 }
-.modal-input:invalid:not(:placeholder-shown) + .email-error {
+.modal-input:not(:focus):not(:placeholder-shown):invalid + .email-error {
   opacity: 1;
 }
 
@@ -186,13 +184,23 @@
 }
 
 .modal-input:invalid:placeholder-shown ~ .submit-button {
-  border-color: var(--button-color);
+  border-color: var(--dark-color);
   cursor: not-allowed;
 }
 .modal-input:invalid:not(:placeholder-shown) ~ .submit-button {
   border-color: #ff705d;
+  opacity: 0.5;
   cursor: not-allowed;
 }
+
+/* .message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.message-text {
+  color: #ffffff;
+} */
 
 /* Media  */
 @media screen and (min-width: 480px) {
