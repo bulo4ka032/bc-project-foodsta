@@ -121,13 +121,6 @@
     border: transparent;
 }
 
-.read-more-text {
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 1.5;
-    color: #000000;
-}
-
 .special-bottom-wrap {
     display: flex;
     column-gap: 24px;
@@ -135,12 +128,12 @@
     margin-top: 28px;
 }
 
-.text-wrap {
+.link-wrap {
+    font-size: 13px;
+    color: #000000;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    border: none;
-    background-color: transparent;
     column-gap: 4px;
 }
 
