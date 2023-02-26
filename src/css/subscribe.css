@@ -66,7 +66,7 @@
 }
 
 .subscribe-input:invalid:not(:placeholder-shown) {
-  border: 0.854167px solid #ff705d;
+  border: 0.854167px solid var(--warning-color);
 }
 
 .subscribe-error {
@@ -76,7 +76,7 @@
   display: inline-flex;
   align-items: center;
   opacity: 0;
-  color: #ff705d;
+  color: var(--warning-color);
   font-size: 10px;
   line-height: 1.5;
 }
@@ -99,17 +99,10 @@
   margin-left: auto;
   padding: 11px 22px;
   transition: background-color var(--transition-duration-and-fun);
-  color: var(--text-color);
-  border: none;
-  border-radius: 30px;
-  background-color: var(--button-color);
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 1.5;
 }
 
 .subscribe-input:invalid:not(:placeholder-shown) ~ .subscribe-button {
-  border: 0.854167px solid #ff705d;
+  border: 0.854167px solid var(--warning-color);
   cursor: no-drop;
 }
 
@@ -199,10 +192,6 @@
 
   .subscribe-inner {
     width: 532px;
-  }
-
-  .subscribe-box {
-    width: 656px;
   }
 
   .subscribe-label {
