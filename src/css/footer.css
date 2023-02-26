@@ -90,7 +90,7 @@
   border-radius: 30px;
   margin-left: 0;
   margin-right: auto;
-  padding: 11px 22px;
+  padding: 8px 22px;
   transition: background-color var(--transition-duration-and-fun),
     border var(--transition-duration-and-fun);
 }
@@ -104,7 +104,7 @@
 }
 .footer-subscribe-text {
   margin-right: 0;
-  margin-top: 20px;
+  margin-top: 24px;
   font-weight: 400;
   font-size: 10px;
   line-height: 1.2;
@@ -211,6 +211,7 @@
     width: 103px;
     height: 42px;
     margin-left: 0;
+    padding: 11px 22px;
   }
   .footer-subscribe-label {
     display: flex;
