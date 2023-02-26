@@ -7,7 +7,7 @@
 }
 
 .special-section {
-    padding-top: 50px;
+    padding-top: 42px;
     padding-bottom: 72px;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .special-image {
-    margin-bottom: 8px;
+    margin-bottom: 60px;
     width: 100%; 
     height: auto;
 }
@@ -148,7 +148,9 @@
     .hero-special {
         background-image: url(../img/services-images/mobile-second-rectangle.jpg);
         background-size: 100% 1050px;
-
+    }
+    .special-section {
+        padding-top: 0px;
     }
 }
 
@@ -158,6 +160,9 @@
         background-image: url(../img/services-images/tablet-services-bg.jpg);        background-repeat: no-repeat;
         background-size: 100% 1100px;
         }
+    .special-section {
+        padding-bottom: 88px;
+    }
 
     .special-image {
         width: 705px;
@@ -202,7 +207,15 @@
         background-image: url(../img/services-images/desk-background.jpg);
         background-size: 100% 824px;
 
+    }
 
+    .special-section {
+        padding-top: 16px;
+        padding-bottom: 43px;
+    }
+
+    .special-images-wrap {
+        flex-shrink: 0;
     }
 
     .special-wrap {
