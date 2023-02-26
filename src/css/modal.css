@@ -83,9 +83,6 @@
   font-size: 13px;
   line-height: 150%;
 }
-/* .submit-button:hover {
-  background-color: var(--button-color);
-} */
 
 .modal-input::placeholder {
   font-weight: 400;
@@ -187,7 +184,7 @@
 }
 
 .modal-input:invalid:placeholder-shown ~ .submit-button {
-  border-color: var(--button-color);
+  border-color: var(--dark-color);
   cursor: not-allowed;
 }
 .modal-input:invalid:not(:placeholder-shown) ~ .submit-button {
@@ -195,6 +192,15 @@
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+/* .message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.message-text {
+  color: #ffffff;
+} */
 
 /* Media  */
 @media screen and (min-width: 480px) {
