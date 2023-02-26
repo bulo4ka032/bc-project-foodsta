@@ -6,6 +6,7 @@
   top: 0px;
   background: rgba(94, 99, 99, 0.7);
   transition: var(--transition-duration-and-fun);
+  z-index: 1;
 }
 .modal {
   position: relative;
@@ -40,7 +41,7 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 120%;
-  color: var(text-color);
+  color: var(--text-color);
   text-align: center;
 }
 .input-wrap {
