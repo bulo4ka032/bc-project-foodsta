@@ -2,6 +2,7 @@
     const mobileMenu = document.querySelector('.js-menu-container');
     const openMenuBtn = document.querySelector('.js-open-menu');
     const closeMenuBtn = document.querySelector('.js-close-menu');
+    const closeMenuLink = document.querySelector('.js-close-link');
   
     const toggleMenu = () => {
       const isMenuOpen =
@@ -15,7 +16,7 @@
       // bodyScrollLock[scrollLockMethod](document.body);
     };
   
-    // mobileMenu.addEventListener('click', toggleMenu);
+    closeMenuLink.addEventListener('click', toggleMenu);
     openMenuBtn.addEventListener('click', toggleMenu);
     closeMenuBtn.addEventListener('click', toggleMenu);
   
