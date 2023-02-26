@@ -253,4 +253,10 @@
   .right-slider {
     transform: translateX(10px);
   }
+  .hero-buttons {
+    position: absolute;
+    right: 37px;
+    top: 72px;
+    width: 535px;
+  }
 }
