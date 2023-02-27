@@ -77,7 +77,7 @@
   margin-bottom: 20px;
 }
 .footer-error {
-  top: 32px;
+  top: 42px;
 }
 .footer-submit-button {
   display: flex;
@@ -92,9 +92,7 @@
 .footer-submit-button:focus {
   border: 0.85px solid var(--main-color);
 }
-.footer-error {
-  top: 32px;
-}
+
 .footer-subscribe-text {
   margin-right: 0;
   margin-top: 24px;
@@ -276,9 +274,7 @@
       margin-top: 0;
       margin-left: auto;
     }
-    .footer-error {
-      top: 42px;
-    }
+
     .footer-text {
       margin-left: auto;
     }
