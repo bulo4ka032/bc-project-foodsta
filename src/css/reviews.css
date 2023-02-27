@@ -124,13 +124,22 @@
   background-color: var(--dark-color);
 }
 
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    .review-title,
+    .review-description{
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
 @media screen and (min-width: 480px) {
   .review {
     background-image: url(../img/bg-review-mob-480.svg);
   }
-   .review-container{
-        width: 280px;
-    }
+
+ 
 }
 
 @media screen and (min-width: 768px) {
@@ -140,10 +149,12 @@
     background-image: url(../img/bg-review-tab.svg);
   }
   
-    .review-container{
-        width: 100%;
-    }
-    
+  .review-title,
+  .review-description{
+       width: 100%;
+       
+  }
+   
 
   .review-title {
     font-size: 42px;
