@@ -216,7 +216,7 @@
 
  @media screen and (min-width: 1280px) {
     .review{
-        background-image: url(../img/bg-review-desk.jpg);
+        background-image: url(../img/bg-review-desk.svg);
         padding-top: 100px;   
     }
 
