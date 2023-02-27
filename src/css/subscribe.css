@@ -32,7 +32,7 @@
   line-height: calc(16 / 14);
 }
 
-.subscribe-label {
+.cubscribe-form {
   position: relative;
   display: flex;
   align-items: flex-start;
@@ -41,8 +41,13 @@
   gap: 20px;
 }
 
+.subscribe-label {
+  width: 100%;
+}
+
 .subscribe-input {
   width: 100%;
+  display: block;
   padding: 12px 11px;
   transition: color var(--transition-duration-and-fun);
   text-transform: capitalize;
@@ -71,7 +76,7 @@
 
 .subscribe-error {
   position: absolute;
-  top: 40px;
+  top: 41px;
   left: 0;
   display: inline-flex;
   align-items: center;
@@ -160,7 +165,7 @@
     line-height: 1.5;
   }
 
-  .subscribe-label {
+  .cubscribe-form {
     flex-wrap: nowrap;
     gap: 22px;
   }
@@ -194,7 +199,7 @@
     width: 532px;
   }
 
-  .subscribe-label {
+  .cubscribe-form {
     display: flex;
     align-items: start;
     flex-wrap: nowrap;
