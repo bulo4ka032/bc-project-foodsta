@@ -146,8 +146,15 @@
   .header-menu {
     display: flex;
     align-items: center;
-    gap: 28px;
+    justify-content: space-between;
+    width: 319px;
+    flex-shrink: 0;
+    /* gap: 28px; */
     margin-right: 30px;
+  }
+
+  .header-menu-item {
+    min-width: 100%;
   }
 
   .header-menu-item:hover,
@@ -165,6 +172,12 @@
 
   .header-btn {
     display: block;
+    transition: background-color var(--transition-dur-and-fun);
+  }
+
+  .header-btn:hover,
+  .header-btn:focus {
+    background-color: var(--main-color);
   }
 }
 

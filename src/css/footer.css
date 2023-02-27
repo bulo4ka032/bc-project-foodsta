@@ -44,7 +44,7 @@
 .footer-subscribe {
   margin-top: 40px;
 }
-.subscribe-text {
+.block-subscribe-text {
   font-weight: 500;
   font-size: 14px;
   line-height: 150%;
@@ -76,23 +76,28 @@
   height: 42px;
   margin-bottom: 20px;
 }
-
+.footer-error {
+  top: 32px;
+}
 .footer-submit-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--text-color);
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 30px;
-  border: 0.85px solid var(--dark-color);
-  border-radius: 30px;
-  margin-left: auto;
-  padding: 11px 22px;
-  transition: background-color var(--transition-duration-and-fun);
+  margin-left: 0;
+  margin-right: auto;
+  padding: 8px 22px;
+  transition: border var(--transition-duration-and-fun);
+}
+.footer-submit-button:hover,
+.footer-submit-button:focus {
+  border: 0.85px solid var(--main-color);
+}
+.footer-error {
+  top: 32px;
 }
 .footer-subscribe-text {
   margin-right: 0;
-  margin-top: 20px;
+  margin-top: 24px;
   font-weight: 400;
   font-size: 10px;
   line-height: 1.2;
@@ -136,6 +141,9 @@
   color: var(--text-color);
 }
 @media screen and (min-width: 480px) {
+  .footer-container {
+    width: 320px;
+  }
   .footer-block {
     min-width: 320px;
   }
@@ -144,6 +152,9 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .footer-container {
+    width: 734px;
+  }
   .footer-block {
     max-height: 506px;
     background-image: url(../img/foto_footer/destop/kapli-smile.png),
@@ -156,7 +167,7 @@
     background-position: bottom 0 left 100px, bottom 0 right 65%,
       bottom 0 left -10px, bottom 0 right 110px, bottom 0 right 45%,
       bottom 0 right 0, bottom 141px right 0px;
-    background-size: 168px, 140px, 140px, 168px, 180px, 150px, 20%;
+    background-size: 168px, 140px, 140px, 168px, 180px, 150px, 150px;
     background-repeat: no-repeat;
   }
   @media (min-device-pixel-ratio: 2),
@@ -193,6 +204,7 @@
     width: 103px;
     height: 42px;
     margin-left: 0;
+    padding: 11px 22px;
   }
   .footer-subscribe-label {
     display: flex;
@@ -219,9 +231,9 @@
   }
 
   @media screen and (min-width: 1280px) {
-    /* .footer-container {
-      height: 395px;
-    } */
+    .footer-container {
+      width: 1278px;
+    }
     .footer-block {
       max-height: 395px;
       background-image: url(../img/foto_footer/destop/big-kapli.png),
@@ -232,9 +244,9 @@
         url(../img/foto_footer/destop/kapli-2.png),
         url(../img/foto_footer/destop/manzana.png),
         url(../img/foto_footer/destop/naranja.png);
-      background-position: 45% 100%, 50% 100%, 70% 100%, 25% 100%, 95% 100%,
-        87% 100%, 32% 100%, 15% 100%;
-      background-size: 30%, 25%, 15%, 10%, 10%, 15%, 10%, 10%;
+      background-position: 50% 100%, 50% 100%, 66% 100%, 28% 100%, 87% 100%,
+        78% 100%, 34% 100%, 18% 100%;
+      background-size: 570px, 380px, 232px, 182px, 181px, 178px, 163px, 196px;
       background-repeat: no-repeat;
     }
     @media (min-device-pixel-ratio: 2),
@@ -258,12 +270,22 @@
     }
 
     .footer-subscribe {
+      width: 395px;
+      display: flex;
+      flex-direction: column;
       margin-top: 0;
+      margin-left: auto;
+    }
+    .footer-error {
+      top: 42px;
     }
     .footer-text {
       margin-left: auto;
     }
     .footer-nav {
+      margin-right: 0;
+    }
+    .footer-submit-button {
       margin-right: 0;
     }
   }

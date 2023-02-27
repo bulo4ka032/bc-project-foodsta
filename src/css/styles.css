@@ -23,15 +23,12 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color: var(--text-color);
-  background-color: var(--background-color);
+  /* color: var(--text-color);
+  background-color: var(--background-color); */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  --btn-green: #bbf330;
-  --text-color-main: #2c2c2c;
-  --yellow-main: #ffe550;
 }
