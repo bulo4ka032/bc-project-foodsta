@@ -128,6 +128,9 @@
   .review {
     background-image: url(../img/bg-review-mob-480.svg);
   }
+   .review-container{
+        width: 280px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -136,6 +139,11 @@
     padding-bottom: 120px;
     background-image: url(../img/bg-review-tab.svg);
   }
+  
+    .review-container{
+        width: 100%;
+    }
+    
 
   .review-title {
     font-size: 42px;
@@ -186,49 +194,61 @@
   .review-card-description::after {
     width: 1px;
     height: 52px;
-  }
-  .review-photo {
-    margin-left: 8px;
-  }
-}
+   }
+    
+   .review-photo{
+     margin-left: 8px;
+   }
+ }
+ 
 
-@media screen and (min-width: 1280px) {
-  .review {
-    padding-top: 100px;
-    background-image: url(../img/bg-review-desk.svg);
-  }
+  
+ @media screen and (min-width: 1280px) {
+    .review{
+        background-image: url(../img/bg-review-desk.jpg);
+        padding-top: 100px;   
+    }
 
-  .review-title {
-    margin-left: 1px;
-  }
+ 
 
-  .review-description {
-    margin-left: 1px;
-  }
+    .review-title{
+        margin-left: 1px;
+    }
+    
+    .review-description{
+        margin-left: 1px;
+    }
 
-  .review-rate {
-    margin-top: 14px;
-    margin-left: 14px;
-  }
+    .review-rate{
+        margin-left: 14px;
+        margin-top: 14px;
+    }
 
-  .review-card-boy,
-  .review-card-girl {
-    width: 501px;
-    height: 227px;
-    margin-right: 139px;
-    margin-bottom: 24px;
-    margin-left: 0;
-  }
 
-  .review-card-list {
-    margin-left: 1px;
-  }
+    
+    .review-card-boy,
+    .review-card-girl{
+        width: 501px;
+        height: 227px;
+        margin-left: 0;
+        margin-right: 139px;
+        margin-bottom: 24px;
+       }
 
-  .review-text {
-    margin-left: 14px;
-  }
+    .review-card-list{
+        margin-left: 1px;
+      }
 
-  .review-footer {
-    margin-left: 4px;
-  }
-}
+    .review-text{
+        margin-left: 14px;
+      }
+
+    .review-footer{
+        margin-left: 4px;
+    }
+
+ }
+    
+
+
+
