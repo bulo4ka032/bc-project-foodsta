@@ -124,23 +124,32 @@
   background-color: var(--dark-color);
 }
 
-@media screen and (min-width: 321px) and (max-width: 480px) {
-    .review-title,
-    .review-description{
-        width: 280px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
 
 
 @media screen and (min-width: 480px) {
   .review {
     background-image: url(../img/bg-review-mob-480.svg);
+   
   }
 
- 
+  /* .review-title,
+  .review-description{
+      width: 280px;
+      margin-left: auto;
+      margin-right: auto;
+  } */
+
+ }
+
+ @media screen and (min-width: 480px) and (max-width: 767px) {
+  .review-title,
+  .review-description{
+      width: 280px;
+      margin-left: auto;
+      margin-right: auto;
+  }
 }
+
 
 @media screen and (min-width: 768px) {
   .review {
@@ -220,7 +229,12 @@
         padding-top: 100px;   
     }
 
- 
+    .review-title,
+    .review-description{
+       width: 100%;
+       
+  }
+   
 
     .review-title{
         margin-left: 1px;
