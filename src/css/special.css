@@ -135,6 +135,13 @@
     flex-wrap: wrap;
     align-items: center;
     column-gap: 4px;
+    transition: color var(--transition-duration-and-fun), text-decoration var(--transition-duration-and-fun);
+}
+
+.link-wrap:hover,
+.link-wrap:focus {
+    color: var(--button-color);
+    text-decoration: underline;
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {    
@@ -251,5 +258,9 @@
     .special-item-text {
         line-height: 1.5;
         max-width: 253px;
+    }
+
+    .link-wrap {
+        display: none;
     }
 }
