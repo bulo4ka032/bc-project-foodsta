@@ -34,8 +34,7 @@
   font-size: 14px;
   line-height: 1.17;
 
-  transition: color var(--transition-dur-and-fun),
-    text-decoration var(--transition-dur-and-fun);
+  transition: color var(--transition-dur-and-fun), text-decoration var(--transition-dur-and-fun);
 }
 
 .header-menu-item:hover,
