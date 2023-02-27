@@ -198,12 +198,13 @@
 
 .message {
   position: absolute;
-  top: 325px;
-  left: 145px;
+  top: 73%;
+  left: 32%;
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
+  transition: var(--transition-duration-and-fun);
 }
 .message-text {
   position: absolute;
