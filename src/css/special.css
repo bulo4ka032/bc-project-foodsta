@@ -237,6 +237,7 @@
   .special-image {
     width: 505px;
     height: auto;
+    margin-bottom: 0;
   }
 
   .special-content-wrap {
