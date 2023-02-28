@@ -66,9 +66,39 @@
     right: 30px;
     bottom: 30px;
 }
+.upward{
+    position: fixed;
+    bottom: -100px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background: url(../img/arrow_scroll.png);
+    background-size: cover;
+    background-color: transparent;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-1500);
+    transition-duration: 0.5s;
+    scale: 1;
+    z-index: 1;
+}
+.upward:hover{
+    scale: 1.1;
+}
+.upward.active{
+    bottom: 40px;
+    visibility: visible;
+    opacity: 1;
+}
 @media screen and (min-width: 480px) {
     .favorites_title{
         width: 280px;
+    }
+    .upward{
+        right: 20px;
+        width: 40px;
+        height: 40px;
     }
 }
 @media screen and (min-width: 768px) {
@@ -105,6 +135,11 @@
         font-size: 16px;
         line-height: 1.18;
     }
+    .upward{
+        right: 15px;
+        width: 40px;
+        height: 40px;
+    }
 }
 @media screen and (min-width: 1280px) {
     .favorites_list{
@@ -124,27 +159,8 @@
         height: 315px;
     }
     .upward{
-        position: fixed;
-        bottom: -100px;
         right: 40px;
         width: 50px;
         height: 50px;
-        background: url(../img/arrow_scroll.png);
-        background-size: cover;
-        background-color: transparent;
-        cursor: pointer;
-        visibility: hidden;
-        opacity: 0;
-        transform: translateY(-1500);
-        transition-duration: 0.5s;
-        scale: 1;
-    }
-    .upward:hover{
-        scale: 1.1;
-    }
-    .upward.active{
-        bottom: 40px;
-        visibility: visible;
-        opacity: 1;
     }
 }
