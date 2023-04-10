@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/goit-bc50-html-css-project/assets/apple-touch-icon-7a6cbe53.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,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"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABQVBMVEUAAAC78zC88zDe7EHd7EC/8jL/5VC+8jLA8jKf+SO19C3C8jPB8jP/3GP/3WK68zC78zC78zC78zC78zC78zC78zC78zC78zC68y+r9ii68y+78zC78zC78zD/5FH/5VD/5VD/5FG78zC78zD/5VD/5VD/5VC78zC78zC78zD/5VD/5VD/5VD/5VD/5VC78zC68zD/4Vn/5VD/5VD/5VD/5VD/5VD/5VD/5VD/5VD/4Vq78zCz9Sz/5VH/5VD/5VD/5VGu9ir/5VH/5VD/5VD/5VGu9Sq68zD/5VD/5VD/5VD/5VC78zD/5VD/5VD/5VD/5VD/5VD/5VC49C//5FP/5VD/5VD/5VD/5VD/41TB8TT/5VD/5VD/5VD/5VD/5VD/5VD/5VC88zG78jL/3GP/3WL/3GS78zC78zD/5VD////dooBuAAAAaXRSTlMAAAAAAAAAAAAAAAAAAAAAB0yjwxqPqFskDyWlew8LYWAKBgT5+F5NpxACJMvII6JaDXOq1v791alyC8IiVPv6URA45eM2EBJV6+pSJgOnowSvqw8KwufovwkEZcWGKyyIYgQPBwEHJRI7jkDaAAAAAWJLR0RqJWKVDgAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+cCGgofC9XuN8EAAADkSURBVBjTY2BgYBQQFBIGAiFBAUYGBgYmRhFRMXEJSUkpcTFREUZGBkYRaRlZZjl5BUUWWRlpEUYGJVEZZVY2eRVVNTZ2ZRlRJQZ1DU0OLW2dzExdPS0OTQ11Bn0DQyNjE9PMTDNzC0srA30Gaxtbu0wosHewsWYQdnRyhgm4uLoJMwi7c3p4Qvhe3lzuwgzWPty+fhABfy0eH2sGfXGOgECIQJAvq7g+0NrgkNBM07Bw08yIyGCgtUCHRUXHxMbFJ8QkJoEcBnJ6ckoqL19qWjLY6YwgzxmkZ2SkG4A8x8+A7n0AA+Ux7G/x+T0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDItMjZUMTA6MzE6MTErMDA6MDBHD9MDAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTAyLTI2VDEwOjMxOjExKzAwOjAwNlJrvwAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg=="
+    />
+    <link rel="manifest" href="data:application/manifest+json;base64,ewogICAgIm5hbWUiOiAiIiwKICAgICJzaG9ydF9uYW1lIjogIiIsCiAgICAiaWNvbnMiOiBbCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi9hbmRyb2lkLWNocm9tZS0xOTJ4MTkyLnBuZyIsCiAgICAgICAgICAgICJzaXplcyI6ICIxOTJ4MTkyIiwKICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi9hbmRyb2lkLWNocm9tZS01MTJ4NTEyLnBuZyIsCiAgICAgICAgICAgICJzaXplcyI6ICI1MTJ4NTEyIiwKICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgICAgIH0KICAgIF0sCiAgICAidGhlbWVfY29sb3IiOiAiI2ZmZmZmZiIsCiAgICAiYmFja2dyb3VuZF9jb2xvciI6ICIjZmZmZmZmIiwKICAgICJkaXNwbGF5IjogInN0YW5kYWxvbmUiCn0K" />
+    <link
+      rel="mask-icon"
+      href="/goit-bc50-html-css-project/assets/safari-pinned-tab-6b1f199d.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <title>FoodSta</title>
+    
+    <script type="module" crossorigin src="/goit-bc50-html-css-project/assets/index-481c7483.js"></script>
+    <link rel="stylesheet" href="/goit-bc50-html-css-project/assets/index-7b41404c.css">
+  </head>
+  <body>
+    <!-- HEADER -->
+<header class="header-section" id="home">
+  <div class="header-container">
+    <a href="#" class="header-logo-link">
+      <svg width="66" height="52">
+        <use href="/goit-bc50-html-css-project/assets/icons-b01ad4eb.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <div class="header-wrap">
+      <nav class="header-nav">
+        <ul class="header-menu">
+          <li>
+            <a href="#home" class="header-menu-item">Home</a>
+          </li>
+          <li><a href="#about" class="header-menu-item">About</a></li>
+          <li><a href="#service" class="header-menu-item">Service</a></li>
+          <li><a href="#menu" class="header-menu-item">Menu</a></li>
+          <li><a href="#contact" class="header-menu-item">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-open js-open-menu">
+          <svg class="burger-icon" width="28" height="28">
+            <use href="/goit-bc50-html-css-project/assets/icons-b01ad4eb.svg#icon-burger" class="burger-svg"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu js-menu-container">
+          <button class="mobile-menu-close js-close-menu">
+            <svg width="24" height="24" class="mobile-menu-close-icon">
+              <use href="/goit-bc50-html-css-project/assets/icons-b01ad4eb.svg#mobile-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+              <a href="#home" class="mobile-menu-link home-link js-close-link"
+                >Home</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a href="#about" class="mobile-menu-link js-close-link">About</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="#service" class="mobile-menu-link js-close-link"
+                >Service</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a href="#menu" class="mobile-menu-link js-close-link">Menu</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a
+                href="#contact"
+                class="mobile-menu-link contact-link js-close-link"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <button
+        type="button"
+        class="dark-btn main-btn header-btn"
+        data-modal-open
+      >
+        Order Now
+      </button>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <div class="hero-special">
+        <section id="about" class="hero-section">
+  <div class="hero-container container">
+    <div class="order">
+      <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
+      <p class="hero-desc">
+        With just a few clicks, you can have your favorite meals delivered
+        straight to your doorstep, no matter where you are. Order now and enjoy
+        a hassle-free and delicious meal from the comfort of your own home.
+      </p>
+      <button type="submit" class="hero-btn" data-modal-open>Order Now</button>
+    </div>
+
+    <div class="slider-container swiper">
+      <div class="outer-circle">
+        <div class="hero-gallery-wrap swiper-container">
+          <ul class="gallery-list swiper-wrapper">
+            <li class="gallery-item swiper-slide">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="/goit-bc50-html-css-project/assets/slider-option-1-41dcee5d.png 1x, /goit-bc50-html-css-project/assets/slider-option-1@2x-77a9c36b.png 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="/goit-bc50-html-css-project/assets/slider-option-1-tab-b9fb005c.png 1x, /goit-bc50-html-css-project/assets/slider-option-1-tab@2x-136d98ee.png 2x"
+                />
+                <img
+                  src="/goit-bc50-html-css-project/assets/slider-option-1-41dcee5d.png"
+                  class="img-food"
+                  alt="food option"
+                />
+              </picture>
+            </li>
+            <li class="gallery-item swiper-slide">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="/goit-bc50-html-css-project/assets/slider-option-2-302a5e69.png 1x, /goit-bc50-html-css-project/assets/slider-option-2@2x-30d868d2.png 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="/goit-bc50-html-css-project/assets/slider-option-2-tab-49fd19eb.png 1x, /goit-bc50-html-css-project/assets/slider-option-2-tab@2x-2bad799b.png 2x"
+                />
+                <img
+                  src="/goit-bc50-html-css-project/assets/slider-option-2-302a5e69.png"
+                  class="img-food"
+                  alt="food option"
+                />
+              </picture>
+            </li>
+            <li class="gallery-item swiper-slide">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="/goit-bc50-html-css-project/assets/slider-option-3-feb91e14.png 1x, /goit-bc50-html-css-project/assets/slider-option-3@2x-41564645.png 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="/goit-bc50-html-css-project/assets/slider-option-3-tab-8b0c60d6.png 1x, /goit-bc50-html-css-project/assets/slider-option-3-tab@2x-31ba0ad6.png 2x"
+                />
+                <img
+                  src="/goit-bc50-html-css-project/assets/slider-option-3-feb91e14.png"
+                  class="img-food"
+                  alt="food option"
+                />
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="hero-buttons">
+      <button type="button" class="left-slider slider-btn swiper-button-prev">
+        <svg class="left-arrow" width="16" height="29">
+          <use
+            href="/goit-bc50-html-css-project/assets/symbol-defs-55aa408a.svg#icon-vector-left"
+            class="icon-left-arrow"
+          ></use>
+        </svg>
+      </button>
+      <button type="button" class="right-slider slider-btn swiper-button-next">
+        <svg class="right-arrow" width="16" height="29">
+          <use href="/goit-bc50-html-css-project/assets/symbol-defs-55aa408a.svg#icon-vector-right"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+        <section id="service" class="section special-section">
+    <div class="container special-wrap">
+        <div class="special-images-wrap">
+                <picture>
+                    <source media="(min-width: 1280px)" 
+                    srcset="/goit-bc50-html-css-project/assets/desk-apple-30affa1f.png 1x, /goit-bc50-html-css-project/assets/desk-apple-2x-f8b6edbb.png 2x">
+                    <source media="(min-width: 768px)" 
+                    srcset="/goit-bc50-html-css-project/assets/tablet-apples-9b2ee62a.png 1x, /goit-bc50-html-css-project/assets/tablet-apples-2x-3509a2c4.png 2x">
+                    <source media="(min-width: 320px)" 
+                    srcset="/goit-bc50-html-css-project/assets/mobile-apple-png-d2fe3944.png 1x, /goit-bc50-html-css-project/assets/mobile-apple-png-2x-f937efae.png 2x">
+                    <img src="/goit-bc50-html-css-project/assets/desk-apple-30affa1f.png" alt="green apple" class="special-image" loading="lazy">
+                </picture>
+        </div>
+        <div class="special-content-wrap">
+                <h2 class="special-title">What's Special About Our Offerings</h2>
+                <p class="special-general-text">With our platform, you can browse through a diverse selection of cuisines and local restaurants, and choose from a
+                variety of dishes that cater to your specific taste buds.</p>
+            <ul class="special-list">
+                <li class="special-item">
+                    <h3 class="special-item-title">Fastest Delivery</h3>
+                    <p class="special-item-text">Our advanced logistics system and dedicated delivery partners ensure that your meals are delivered to you within
+                    30-minutes.</p>
+                </li>
+                <li class="special-item">
+                    <h3 class="special-item-title">Easy To Order</h3>
+                    <p class="special-item-text">You can browse through a wide variety of cuisines and restaurants, select your favorite meals, and place your order in
+                    just a few clicks.</p>
+                </li>
+                <li class="special-item">
+                    <div class="special-bottom-wrap">
+                        <button type="button" class="special-button" data-modal-open>Order Now</button>
+                        <a href="#" rel="noopener norefferer nofollow" class="link-wrap">
+                            Read More
+                            <svg class="arrow-icon" width="13" height="13">
+                                <use href="/goit-bc50-html-css-project/assets/icons-b01ad4eb.svg#icon-arrow-right-no-border"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+      </div>
+      <section class="section" id="menu">
+    <div>
+        <a href="#top" class="upward"></a>
+    </div>
+    <div class="container">
+        <h2 class="favorites_title">Some of Our Favorites</h2>
+        <p class="favorites_sub_title">Looking for something delicious?</p>
+        <ul class="favorites_list">
+            <li class="favorites_item">
+                <a class="favorites_links">
+                    <picture>
+                        <source media="(min-width: 1280px)" 
+                        srcset="/goit-bc50-html-css-project/assets/desk_burger-min-bbd37bd1.png 1x, /goit-bc50-html-css-project/assets/desk_burger@2x-min-638a61ca.png 2x">
+                        <source media="(min-width: 768px)" 
+                        srcset="/goit-bc50-html-css-project/assets/tab_burger-min-109126fd.png 1x, /goit-bc50-html-css-project/assets/tab_burger@2x-min-d3fad735.png 2x">
+                        <source media="(min-width: 320px)" 
+                        srcset="/goit-bc50-html-css-project/assets/mobile_burger-min-a7af9304.png 1x, /goit-bc50-html-css-project/assets/mobile_burger@2x-min-db352df5.png 2x">
+                        <img src="/goit-bc50-html-css-project/assets/desk_burger-min-bbd37bd1.png" alt="burger" class="favorites_img zoom_img" loading="lazy">
+                    </picture>
+                </a>
+                
+            </li> 
+            <li class="favorites_item">
+                <a class="favorites_links">
+                    <picture>
+                        <source media="(min-width: 1280px)" 
+                        srcset="/goit-bc50-html-css-project/assets/desk_pasta-min-e0eda669.png 1x, /goit-bc50-html-css-project/assets/desk_pasta@2x-min-49d324ee.png 2x">
+                        <source media="(min-width: 768px)" 
+                        srcset="/goit-bc50-html-css-project/assets/tab_pasta-min-81b18b54.png 1x, /goit-bc50-html-css-project/assets/tab_pasta@2x-min-28376312.png 2x">
+                        <source media="(min-width: 320px)" 
+                        srcset="/goit-bc50-html-css-project/assets/mobile_pasta-min-7273d696.png 1x, /goit-bc50-html-css-project/assets/mobile_pasta@2x-min-9d06f4b9.png 2x">
+                        <img src="/goit-bc50-html-css-project/assets/desk_pasta-min-e0eda669.png" alt="spaghetti" class="favorites_img zoom_img" loading="lazy">
+                    </picture>
+                </a>
+            </li>
+            <li class="favorites_item">
+                <a class="favorites_links">
+                    <picture>
+                        <source media="(min-width: 1280px)" 
+                        srcset="/goit-bc50-html-css-project/assets/desk_pizza-min-421d6277.png 1x, /goit-bc50-html-css-project/assets/desk_pizza@2x-min-1708c203.png 2x">
+                        <source media="(min-width: 768px)" 
+                        srcset="/goit-bc50-html-css-project/assets/tab_pizza-min-94eadf35.png 1x, /goit-bc50-html-css-project/assets/tab_pizza@2x-min-d27f7370.png 2x">
+                        <source media="(min-width: 320px)" 
+                        srcset="/goit-bc50-html-css-project/assets/mobile_pizza-min-de813b3b.png 1x, /goit-bc50-html-css-project/assets/mobile_pizza@2x-min-74602dd3.png 2x">
+                        <img src="/goit-bc50-html-css-project/assets/desk_pizza-min-421d6277.png" alt="pizza" class="favorites_img zoom_img" loading="lazy">
+                    </picture>
+                </a>
+            </li>
+            <li class="favorites_item favorites_hidden">
+                <a class="favorites_links">
+                    <picture>
+                        <source media="(min-width: 1280px)" 
+                        srcset="/goit-bc50-html-css-project/assets/desk_chicken-min-2ccbd4e1.png 1x, /goit-bc50-html-css-project/assets/desk_chicken@2x-min-79f71828.png 2x">
+                        <source media="(min-width: 768px)" 
+                        srcset="/goit-bc50-html-css-project/assets/tab_chicken-min-d29907f7.png 1x, /goit-bc50-html-css-project/assets/tab_chicken@2x-min-49dcd3f6.png 2x">
+                        <img src="/goit-bc50-html-css-project/assets/desk_chicken-min-2ccbd4e1.png" alt="chicken" class="favorites_img zoom_img" loading="lazy">
+                    </picture>
+                </a>
+            </li>
+            <li class="favorites_item favorites_hidden">
+                <a class="favorites_links">
+                    <picture>
+                        <source media="(min-width: 1280px)" 
+                        srcset="/goit-bc50-html-css-project/assets/desk_salat-min-df7cfe1b.png 1x, /goit-bc50-html-css-project/assets/desk_salat@2x-min-b593ddb4.png 2x">
+                        <source media="(min-width: 768px)" 
+                        srcset="/goit-bc50-html-css-project/assets/tab_salat-min-51bc1fee.png 1x, /goit-bc50-html-css-project/assets/tab_salat@2x-min-5305d2d2.png 2x">
+                        <img src="/goit-bc50-html-css-project/assets/desk_salat-min-df7cfe1b.png" alt="fish" class="favorites_img zoom_img" loading="lazy">
+                    </picture>
+                </a>
+            </li>
+            <li class="favorites_item favorites_hidden">
+                <a class="favorites_links">
+                    <picture>
+                        <source media="(min-width: 1280px)" 
+                        srcset="/goit-bc50-html-css-project/assets/desk_borshch-min-00cc89d1.png 1x, /goit-bc50-html-css-project/assets/desk_borshch@2x-min-ede155c9.png 2x">
+                        <source media="(min-width: 768px)" 
+                        srcset="/goit-bc50-html-css-project/assets/tab_borshch-min-5d28bb93.png 1x, /goit-bc50-html-css-project/assets/tab_borshch@2x-min-d42617e4.png 2x">
+                        <img src="/goit-bc50-html-css-project/assets/desk_borshch-min-00cc89d1.png" alt="borsch" class="favorites_img zoom_img" loading="lazy">
+                    </picture>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script>
+    window.addEventListener ('scroll', function (){
+        var scroll = document. querySelector (' .upward') ;
+        scroll.classList.toggle ("active", window.scrollY>500)
+    })
+    </script>
+</section>
+      <div class="reviews-subscribe">
+        <section class="review section">
+  <div class="review-container container">
+    <h2 class="review-title">What our Customers Say</h2>
+    <p class="review-description">
+      Don't just take our word for it - see what our satisfied customers have to
+      say
+    </p>
+
+    <div class="review-card-list">
+    <article class="review-card-boy">
+      <ul class="review-rate">
+        <li class="review-star">
+          <svg class="review-icon" width="17" height="16">
+            <use href="/goit-bc50-html-css-project/assets/icons-b01ad4eb.svg#icon-star"></use>
+          </svg>
+        </li>
+        <li class="review-star">
+          <svg class="review-icon" width="17" height="16">
+            <use href="/goit-bc50-html-css-project/assets/icons-b01ad4eb.svg#icon-star"></use>
+          </svg>
+        </li>
+        <li class="review-star">
+          <svg class="review-icon" width="17" height="16">
+            <use href="/goit-bc50-html-css-project/assets/star-a651447b.svg#icon-star"></use>
+          </svg>
+        </li>
+        <li class="review-star">
+          <svg class="review-icon" width="17" height="16">
+            <use href="/goit-bc50-html-css-project/assets/star-a651447b.svg#icon-star"></use>
+          </svg>
+        </li>
+        <li class="review-star">
+          <svg class="review-icon" width="17" height="16">
+            <use href="/goit-bc50-html-css-project/assets/star-a651447b.svg#icon-star"></use>
+          </svg>
+        </li>
+      </ul>
+      <p class="review-text">
+        “The Best app I have used to order food in a while, so many options to choose from too, I would recommend to a freind, No questions asked” </p>
+      <div class="review-footer">
+        <picture class="review-photo">
+          <source
+            media="(min-width: 1280px)"
+            srcset="/goit-bc50-html-css-project/assets/boy-desk-1x-b29945d5.png 1x, /goit-bc50-html-css-project/assets/boy-desk-2x-15498874.png 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/goit-bc50-html-css-project/assets/boy-desk-1x-b29945d5.png 1x, /goit-bc50-html-css-project/assets/boy-desk-2x-15498874.png 2x"
+          />
+          <source
+            media="(min-width: 320px)"
+            srcset="/goit-bc50-html-css-project/assets/boy-desk-1x-b29945d5.png 1x, /goit-bc50-html-css-project/assets/boy-desk-2x-15498874.png 2x"
+          />
+          <img src="/goit-bc50-html-css-project/assets/boy-desk-1x-b29945d5.png" 
+          alt="Sumith Shah"
+          loading="lazy" 
+          width="48" height="48" />
+        </picture>
+        <div class="review-card-description">
+          <p class="review-name">Sumith Shah</p>
+          <p class="review-position">Some Dude</p>
+        </div>
+      </div>
+    </article>
+    <article class="review-card-girl">
+      <ul class="review-rate">
+        <li class="review-star">
+          <svg class="review-icon" width="17" height="16">
+            <use href="/goit-bc50-html-css-project/assets/star-a651447b.svg#icon-star"></use>
+          </svg>
+        </li>
+        <li class="review-star">
+          <svg class="review-icon" width="17" height="16">
+            <use href="/goit-bc50-html-css-project/assets/star-a651447b.svg#icon-star"></use>
+          </svg>
+        </li>
+        <li class="review-star">
+          <svg class="review-icon" width="17" height="16">
+            <use href="/goit-bc50-html-css-project/assets/star-a651447b.svg#icon-star"></use>
+          </svg>
+        </li>
+        <li class="review-star">
+          <svg class="review-icon" width="17" height="16">
+            <use href="/goit-bc50-html-css-project/assets/star-a651447b.svg#icon-star"></use>
+          </svg>
+        </li>
+        <li class="review-star">
+          <svg class="review-icon" width="17" height="16">
+            <use href="/goit-bc50-html-css-project/assets/star-a651447b.svg#icon-star"></use>
+          </svg>
+        </li>
+      </ul>
+      <p class="review-text">
+        “The ease with which I can just go in and order what i want was amazing, It has been a very pleasant experience ordering from this app”
+      </p>
+      <div class="review-footer">
+      <picture class="review-photo">
+        <source
+          media="(min-width: 1280px)"
+          srcset="/goit-bc50-html-css-project/assets/girl-desk-1x-72e26c66.png 1x, /goit-bc50-html-css-project/assets/girl-desk-2x-18c0d953.png 2x"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/goit-bc50-html-css-project/assets/girl-tab-1x-5b7e89f1.png 1x, /goit-bc50-html-css-project/assets/girl-tab-2x-6427b3fe.png 2x"
+        />
+        <source
+          media="(min-width: 320px)"
+          srcset="/goit-bc50-html-css-project/assets/girl-tab-1x-5b7e89f1.png 1x, /goit-bc50-html-css-project/assets/girl-tab-2x-6427b3fe.png 2x"
+        />
+        <img src="/goit-bc50-html-css-project/assets/girl-desk-1x-72e26c66.png" 
+        alt="Sumith Shah"
+        loading="lazy" 
+        width="48" height="48" />
+      </picture>
+      <div class="review-card-description">
+      
+      <p class="review-name">Sumith Shah</p>
+      <p class="review-position">Some Dude</p>
+     
+    </div>
+    </div>
+    </article>
+  </div>
+  </div>
+</section>
+
+        <section class="subscribe section" id="contact">
+  <div class="container subscribe-wrap">
+    <div class="subscribe-box">
+      <h2 class="subscribe-title">Subscribe To Get Special Offers</h2>
+      <div class="subscribe-inner">
+        <p class="subscribe-text">
+          Order now and receive 10% off your first meal with Enjoy Your Favorite
+          Food From Anywhere.
+        </p>
+        <form class="cubscribe-form">
+            <input
+              class="subscribe-input"
+              id="subscribe"
+              name="subscribe"
+              type="email"
+              title="Enter email address (example@email.com)"
+              minlength="6"
+              maxlength="25"
+              placeholder="Enter your email"
+              required
+            />
+            <span class="subscribe-error">
+              Not a valid email address (example@email.com)
+            </span>
+          
+          <button class="subscribe-button button dark-btn" type="submit">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+    <picture class="subscribe-img">
+      <source
+        srcset="/goit-bc50-html-css-project/assets/banan-desc-b63a2dc9.png 1x, /goit-bc50-html-css-project/assets/banan-desc-2x-6cf29ede.png 2x"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="/goit-bc50-html-css-project/assets/banan-tabl-013a4bdd.png 1x, /goit-bc50-html-css-project/assets/banan-tabl-2x-da1a5f75.png 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="/goit-bc50-html-css-project/assets/banan-mob-4c874b5e.png 1x, /goit-bc50-html-css-project/assets/banan-mob-2x-e649c996.png 2x"
+        media="(min-width: 480px)"
+      />
+      <img src="/goit-bc50-html-css-project/assets/banan-desc-b63a2dc9.png" alt="banana" loading="lazy" />
+    </picture>
+  </div>
+</section>
+
+      </div>
+    </main>
+    <footer class="footer-block">
+  <div class="container footer-container">
+    <div class="footer-block-first">
+      <div class="footer-wraper">
+        <a class="footer-logo" href="#">
+          <svg width="66" height="52">
+            <use href="/goit-bc50-html-css-project/assets/icons-b01ad4eb.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <nav class="footer-nav">
+          <ul class="footer-nav-menu">
+            <li class="footer-nav-menu-item">
+              <a class="footer-nav-menu-link header-menu-item" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="footer-nav-menu-item">
+              <a class="footer-nav-menu-link header-menu-item" href="#about"
+                >About</a
+              >
+            </li>
+            <li class="footer-nav-menu-item">
+              <a class="footer-nav-menu-link header-menu-item" href="#service"
+                >Service</a
+              >
+            </li>
+            <li class="footer-nav-menu-item">
+              <a class="footer-nav-menu-link header-menu-item" href="#menu"
+                >Menu</a
+              >
+            </li>
+            <li class="footer-nav-menu-item">
+              <a class="footer-nav-menu-link header-menu-item" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-subscribe">
+        <p class="block-subscribe-text">Subscribe</p>
+        <form class="footer-form">
+          <input
+            class="footer-subscribe-input subscribe-input"
+            name="subscribe"
+            type="email"
+            title="Not a valid email address (example@email.com)"
+            minlength="6"
+            maxlength="25"
+            placeholder="Enter your email"
+            required
+          />
+          <span class="subscribe-error footer-error">
+            Not a valid email address (example@email.com)
+          </span>
+
+          <button
+            class="footer-submit-button subscribe-button button light-btn"
+            type="submit"
+          >
+            Subscribe
+          </button>
+        </form>
+
+        <p class="footer-subscribe-text">
+          By subscribing you agree to with our &nbsp;<a
+            class="footer-subscribe-link"
+            href="https://www.privacypolicies.com"
+            target="_blank"
+            rel="nofollow noreferrer noopener"
+            >Privacy Policy</a
+          >
+        </p>
+      </div>
+    </div>
+    <div class="footer-block-second">
+      <ul class="footer-list">
+        <li class="footer-list-item">
+          <a
+            class="footer-list-link"
+            href="https://www.privacypolicies.com"
+            target="_blank"
+            rel="nofollow noreferrer noopener"
+            >Privacy Policy</a
+          >
+        </li>
+        <li class="footer-list-item">
+          <a class="footer-list-link">Terms of Service</a>
+        </li>
+        <li class="footer-list-item">
+          <a class="footer-list-link">Cookies Settings</a>
+        </li>
+      </ul>
+
+      <p class="footer-text">&copy;2023 FoodSta. All right reserved.</p>
+    </div>
+  </div>
+</footer>
+
+    <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button class="modal-close-btn" data-modal-close>
+            <svg class="modal-close-icon" width="10.76" height="10.76">
+                <use href="/goit-bc50-html-css-project/assets/icons-b01ad4eb.svg#close"></use>
+            </svg>
+        </button>
+
+
+        <p class="modal-title">Order Form</p>
+
+        <form class="order-form">
+
+            <label for="input-name" class="form-label">Name</label>
+
+            <input type="text" name="name" class="modal-input" placeholder="Your name" required minlength="3"
+                maxlength="25" id="input-name">
+            <span class="name-error">
+                The name must be between 3 and 25 characters
+            </span>
+
+
+            <label for="input-tel" class="form-label">Phone</label>
+
+            <input type="tel" name="phone" class="modal-input" placeholder="+38(0_ _) _ _ _   _ _   _ _"
+                title="Enter letters after prefix: 0__ ___ __ __" required pattern="\d\d\d\d\d\d\d\d\d\d" minlength="10"
+                maxlength="10" id="input-tel">
+            <span class="phone-error">
+                This phone must be in the format 099 000 00 00
+            </span>
+
+
+            <label for="input-email" class="form-label">Email</label>
+
+            <input type="email" name="email" class="modal-input last" placeholder="example@gmail.com" required
+                minlength="6" maxlength="25" id="input-email">
+            <span class="email-error">
+                Not a valid email address (example@email.com)
+            </span>
+
+            <button type="submit" class="submit-button">Send</button>
+
+            <div class="message">
+                <svg class="message-svg" width="165" height="54">
+                    <use href="/goit-bc50-html-css-project/assets/icons-b01ad4eb.svg#icon-message"></use>
+                </svg>
+                <p class="message-text">All fields are required</p>
+            </div>
+
+
+        </form>
+    </div>
+</div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </body>
+</html>
